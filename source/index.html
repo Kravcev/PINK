@@ -1,38 +1,93 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>PINK</title>
-    <link rel="stylesheet" href="/source/css/style.css">
-  </head>
-  <body class="page__body">
 
-<!-- header -->
+<head>
+  <meta charset="utf-8">
+  <title>PINK</title>
+  <link rel="stylesheet" href="/source/css/style.css">
+</head>
+
+<body class="page__body">
+
+  <!-- header -->
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="/source/img/img/logo-pink.svg" width="226" height="30" alt="«PINK»">
+    <a class="logo">
+      <img src="/source/img/icons/logo-pink.svg" width="73" height="23" alt="«PINK»">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
+      <button class="main-nav__toggle-menu" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <button class="main-nav__close-menu" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              ГЛАВНАЯ
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              ФОТОГРАФИИ
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="contest.html">
+              КОНКУРС
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
+
   </header>
 
-<!-- main -->
+  <!-- main -->
 
   <main class="page-main">
-    <h1 class="page-main__text">Взгляните на жизнь
+    <h1 class="visually-hidden">PINK</h1>
+    <h2 class="slogan">Взгляните на жизнь<br>
       иначе!
-    </h1>
-    <a class="page-header__logo">
-      <img src="/source/img/background-picture/phone-in-hand.png" width="320" height="286" alt="Телефон в руке делает фото улицы">
+    </h2>
+    <a class="pame-main__phone-in-hand">
+      <img src="/source/img/background-picture/phone-in-hand.png" width="320" height="286"
+        alt="Телефон в руке делает фото улицы">
     </a>
+    <section class="download-pink">
+      <button class="download-pink__button" type="button">
+        <span class="visually-hidden">Скачать приложение</span>
+      </button>
+      <a class="download-pink__apple">
+        <img src="/source/img/icons/apple-logo.svg" width="47" height="56"
+          alt="Скачать приложение PINK для apple">
+      </a>
+      <a class="download-pink__android">
+        <img src="/source/img/icons/android-logo.svg" width="43" height="47"
+          alt="Скачать приложение PINK для android">
+      </a>
+      <a class="download-pink__microsoft">
+        <img src="/source/img/icons/microsoft-logo.svg" width="44" height="41"
+          alt="Скачать приложение PINK для microsoft">
+      </a>
+      <p class="download-pink__content">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+    </section>
+    <h2 class="slogan">Устали от серости<br> мегаполиса?</h2>
+    <h2 class="slogan">Нам есть, что вам<br> предложить!</h2>
   </main>
 
-<!-- futer -->
+  <!-- futer -->
 
-  <futer class="page-futer">
+  <footer class="page-footer">
 
-  </futer>
-  </body>
+  </footer>
+</body>
+
 </html>
