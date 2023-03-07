@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/source/css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page-body">
 
   <!-- header -->
 
@@ -58,7 +58,7 @@
       <p class="lead__text">Взгляните на жизнь<br>
         иначе!</p>
     </div>
-    <a class="pame-main__phone-in-hand">
+    <a class="phone-in-hand">
       <img src="/source/img/background-picture/phone-in-hand.png" width="320" height="286"
         alt="Телефон в руке делает фото улицы">
     </a>
@@ -112,19 +112,25 @@
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой<br> мир и позволило по-новому<br> взглянуть на привычные серые вещи!<br> А еще я познакомился со своей будущей женой в комментариях к<br> выложенной фотографии!»</p>
+              <p class="reviews__text">«Это приложение перевернуло мой<br> мир и позволило по-новому<br> взглянуть на
+                привычные серые вещи!<br> А еще я познакомился со своей будущей женой в комментариях к<br> выложенной
+                фотографии!»</p>
             </div>
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой<br> мир и позволило по-новому<br> взглянуть на привычные серые вещи!<br> А еще я познакомился со своей будущей женой в комментариях к<br> выложенной фотографии!»</p>
+              <p class="reviews__text">«Это приложение перевернуло мой<br> мир и позволило по-новому<br> взглянуть на
+                привычные серые вещи!<br> А еще я познакомился со своей будущей женой в комментариях к<br> выложенной
+                фотографии!»</p>
             </div>
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой<br> мир и позволило по-новому<br> взглянуть на привычные серые вещи!<br> А еще я познакомился со своей будущей женой в комментариях к<br> выложенной фотографии!»</p>
+              <p class="reviews__text">«Это приложение перевернуло мой<br> мир и позволило по-новому<br> взглянуть на
+                привычные серые вещи!<br> А еще я познакомился со своей будущей женой в комментариях к<br> выложенной
+                фотографии!»</p>
             </div>
           </blockquote>
           <button class="reviews__prev" type="button">Предыдущий отзыв</button>
@@ -138,6 +144,56 @@
       </div>
     </section>
 
+<!-- в коде полная шляпа, нужно нормально создать блоки с таблицей по БЭМ -->
+
+
+    <section class="price">
+      <div class="price__wrapper slider">
+        <h2 class="visually-hidden">Таблица тарифов "PINK"</h2>
+        <div class="price__list slider__list">
+          <div class="price-table hit">
+            <div class="hit__item">ХИТ</div>
+            
+            <ul class="price-table__product">
+              <li class="price-table__product-name">СТАНДАРТ</li>
+              <li class="price-table__product-price">3,99 USD</li>
+            </ul>
+          </div>
+
+          <ul class="price-table__item ">
+            <li>РОЗОВЫЙ ФИЛЬТР
+              <div class="yes">
+                <img src="/source/img/icons/YES.svg" width="31" height="21" alt="yes">
+              </div>
+            </li>
+          </ul>
+
+          <ul class="price-table__item">
+            <li>СМАЙЛИКИ
+              <div class="yes">
+                <img src="/source/img/icons/YES.svg" width="31" height="21" alt="yes">
+              </div>
+            </li>
+          </ul>
+          
+          <ul class="price-table__item">
+            <li>КОММЕНТАРИИ
+              <div class="no">
+                <img src="/source/img/icons/NO.svg" width="27" height="27" alt="no">
+              </div>
+            </li>
+          </ul>
+
+          <button class="reviews__prev" type="button">Предыдущая колонка</button>
+          <button class="reviews__next" type="button">Следующая колонка</button>
+        </div>
+        <p class="price__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--current" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
   </main>
 
   <!-- footer -->
