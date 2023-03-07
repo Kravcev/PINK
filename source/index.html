@@ -143,47 +143,67 @@
         </p>
       </div>
     </section>
-
-<!-- в коде полная шляпа, нужно нормально создать блоки с таблицей по БЭМ -->
-
-
     <section class="price">
       <div class="price__wrapper slider">
         <h2 class="visually-hidden">Таблица тарифов "PINK"</h2>
         <div class="price__list slider__list">
-          <div class="price-table hit">
-            <div class="hit__item">ХИТ</div>
-            
-            <ul class="price-table__product">
-              <li class="price-table__product-name">СТАНДАРТ</li>
-              <li class="price-table__product-price">3,99 USD</li>
-            </ul>
-          </div>
-
-          <ul class="price-table__item ">
-            <li>РОЗОВЫЙ ФИЛЬТР
-              <div class="yes">
-                <img src="/source/img/icons/YES.svg" width="31" height="21" alt="yes">
-              </div>
-            </li>
-          </ul>
-
-          <ul class="price-table__item">
-            <li>СМАЙЛИКИ
-              <div class="yes">
-                <img src="/source/img/icons/YES.svg" width="31" height="21" alt="yes">
-              </div>
-            </li>
-          </ul>
-          
-          <ul class="price-table__item">
-            <li>КОММЕНТАРИИ
-              <div class="no">
-                <img src="/source/img/icons/NO.svg" width="27" height="27" alt="no">
-              </div>
-            </li>
-          </ul>
-
+          <table class="table">
+            <tr class="table__row table__row_header">
+              <td class="table__cell table__cell_header"></td>
+              <td class="table__cell table__cell_header">
+                <p>БАЗА</p>
+                <p>1,99 USD</p>
+              </td>
+              <td class="table__cell table__cell_header">
+                <p>СТАНДАРТ</p>
+                <p>3,99 USD</p>
+              </td>
+              <td class="table__cell table__cell_header">
+                <p>АНЛИМ</p>
+                <p>9,99 USD</p>
+              </td>
+            </tr>
+            <tr class="table__row table__row_header table__row_header-units">
+              <td class="table__cell table__cell_header-units"></td>
+              <td class="table__cell table__cell_header-units">
+                <img class="yes" src="/source/img/icons/YES.svg" width="31" height="21" alt="yes">
+              </td>
+              <td class="table__cell table__cell_header-units">
+                <p>РОЗОВЫЙ ФИЛЬТР</p>
+                <img class="yes" src="/source/img/icons/YES.svg" width="31" height="21" alt="yes">
+              </td>
+              <td class="table__cell table__cell_header-units">
+                <img class="yes" src="/source/img/icons/YES.svg" width="31" height="21" alt="yes">
+              </td>
+            </tr>
+            <tr class="table__row table__row_header table__row_header-units">
+              <td class="table__cell table__cell_header-units"></td>
+              <td class="table__cell table__cell_header-units">
+                <img class="no" src="/source/img/icons/NO.svg" width="31" height="21" alt="no">
+              </td>
+              <td class="table__cell table__cell_header-units">
+                <p>СМАЙЛИКИ</p>
+                <img class="yes" src="/source/img/icons/YES.svg" width="31" height="21" alt="yes">
+              </td>
+              <td class="table__cell table__cell_header-units">
+                <img class="yes" src="/source/img/icons/YES.svg" width="31" height="21" alt="yes">
+              </td>
+            </tr>
+            <tr class="table__row table__row_header table__row_header-units">
+              <td class="table__cell table__cell_header-units"></td>
+              <td class="table__cell table__cell_header-units">
+                <img class="no" src="/source/img/icons/NO.svg" width="31" height="21" alt="no">
+              </td>
+              <td class="table__cell table__cell_header-units">
+                <p>КОММЕНТАРИИ</p>
+                <img class="no" src="/source/img/icons/NO.svg" width="31" height="21" alt="no">
+              </td>
+              <td class="table__cell table__cell_header-units">
+                <img class="yes" src="/source/img/icons/YES.svg" width="31" height="21" alt="yes">
+              </td>
+            </tr>
+            </tbody>
+          </table>
           <button class="reviews__prev" type="button">Предыдущая колонка</button>
           <button class="reviews__next" type="button">Следующая колонка</button>
         </div>
@@ -194,13 +214,14 @@
         </p>
       </div>
     </section>
+    section.
+
   </main>
+    <!-- footer -->
 
-  <!-- footer -->
+    <footer class="page-footer">
 
-  <footer class="page-footer">
-
-  </footer>
+    </footer>
 </body>
 
 </html>
