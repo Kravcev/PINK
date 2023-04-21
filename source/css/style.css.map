@@ -1,1 +1,1 @@
-{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AAAA;EAAO,mBAAA;ACEP","file":"style.css","sourcesContent":["body { background: rgb(255, 243, 243); }","body {\n  background: #fff3f3;\n}"]}
+{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AAAA;EACI,yBAAA;ACCJ","file":"style.css","sourcesContent":[".page {\r\n    background-color:  #1D2631;\r\n}\r\n",".page {\n  background-color: #1D2631;\n}"]}
