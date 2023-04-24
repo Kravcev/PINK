@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,12 @@
     <title>PINK</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="page__body">
+
+<body class="page">
     <header class="page__header page-header">
         <nav class="page-header__nav">
-            <a href="#" class="logo">
-                                
+            <a href="#" class="page-header__logo logo">
+                <img class="logo__PINK" src="/source/img/pink-logo.svg" alt="Логотип PINK" height="23" width="74">
             </a>
             <button class="page-header__toggler" type="button">
                 <span class="visually-hidden">Открыть меню</span>
@@ -33,10 +35,33 @@
         </nav>
     </header>
     <main class="page__main page-main">
-        <header class="page-main__header promo">
-            <h1>Взгляни на жизнь иначе!</h1>
-            <!-- создать папку с картинками -->
+        <header class="page-main__header">
+            <h1 class="visually-hidden">Приложение "PINK" помогает взглянуть на жизнь иначе</h1>
+            <p class="page-main__slogan">Взгляните на жизнь
+                иначе!</p>
+            <img class="page-main__image-iphone" src="/source/img/phone.png" alt="iphone" width="320" height="286">
+            <img class="page-main__image-screen" src="/source/img/screen.png" alt="screen" width="111" height="197">
         </header>
+        <section class="page-main__section apps-download apps-download--color-dark">
+            <h2 class="visually-hidden">Доступно для скачивания на iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </h2>
+            <button class="apps-download__button button">Скачать приложение</button>
+            <a href="#" class="apps-download__link">
+                <img src="/source/img/apple-logo.svg" alt="Скачать приложение для apple">
+            </a>
+            <a href="#" class="apps-download__link">
+                <img src="/source/img/android-logo.svg" alt="Скачать приложение для android">
+            </a>
+            <a href="#" class="apps-download__link">
+                <img src="/source/img/microsoft-logo.svg" alt="Скачать приложение для microsoft">
+            </a>
+            <p class="apps-download__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+        </section>
+        <!-- <section class="page-main__section">
+
+            <p class="page-main__text"></p>
+
+        </section> -->
         <footer class="page-main__footer">
 
         </footer>
@@ -45,4 +70,5 @@
 
     </footer>
 </body>
+
 </html>

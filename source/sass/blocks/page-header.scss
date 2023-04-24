@@ -1,3 +1,13 @@
-.page-header {
-    background-color: aquamarine;
+.page__header {
+    background-color: $color-dark;
+}
+
+.page-header__link {
+    color: $color-white;
+    text-decoration: none;
+
+}
+
+.page-header__item {
+    list-style-type: none;
 }

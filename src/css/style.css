@@ -14,32 +14,10 @@
   line-height: 18px;
   src: url(../fonts/opensans.woff), url(../fonts/opensans.woff2);
 }
-.page__header {
-  background-color: #1d2631;
-}
-
-.page-header__link {
-  color: white;
-  text-decoration: none;
-}
-
-.page-header__item {
-  list-style-type: none;
-}
-
-.apps-download--color-dark {
-  background-color: #1d2631;
-  color: white;
-}
-
-.page-main__header {
-  background-color: #1d2631;
-  background-image: url(/source/img/back-mobile.png);
-  color: white;
-  text-align: center;
+.page {
+  background-color: rgb(60, 52, 105);
 }
 
 .visually-hidden {
   display: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
