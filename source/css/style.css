@@ -27,7 +27,7 @@
   list-style-type: none;
 }
 
-.apps-download--color-dark {
+.page-main__apps-download--color-dark {
   background-color: #1d2631;
   color: white;
 }
@@ -42,4 +42,5 @@
 .visually-hidden {
   display: none;
 }
+
 /*# sourceMappingURL=style.css.map */
