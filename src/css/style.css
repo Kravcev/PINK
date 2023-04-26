@@ -27,7 +27,7 @@
   list-style-type: none;
 }
 
-.page-main__apps-download--color-dark {
+.apps-download--color-dark {
   background-color: rgb(29, 38, 49);
   color: rgb(255, 255, 255);
 }
@@ -37,6 +37,14 @@
   background-image: url(/source/img/back-mobile.png);
   color: rgb(255, 255, 255);
   text-align: center;
+}
+
+.page-main__features-header {
+  background-color: rgb(255, 255, 255);
+}
+
+.page-main__features {
+  background-color: red;
 }
 
 .visually-hidden {

@@ -27,7 +27,7 @@
   list-style-type: none;
 }
 
-.page-main__apps-download--color-dark {
+.apps-download--color-dark {
   background-color: #1d2631;
   color: white;
 }
@@ -39,8 +39,15 @@
   text-align: center;
 }
 
+.page-main__features-header {
+  background-color: white;
+}
+
+.page-main__features {
+  background-color: #f2f2f2;
+}
+
 .visually-hidden {
   display: none;
 }
-
 /*# sourceMappingURL=style.css.map */
