@@ -39,12 +39,9 @@
   text-align: center;
 }
 
-.page-main__features-header {
-  background-color: white;
-}
-
-.page-main__features {
-  background-color: #f2f2f2;
+.page-main__features-main {
+  background-image: url(/source/img/grey-background.png);
+  background-repeat: no-repeat;
 }
 
 .visually-hidden {
@@ -53,5 +50,10 @@
 
 .slider {
   background-color: white;
+}
+
+.page-main__table {
+  background-image: url(/source/img/grey-background-min.png);
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=style.css.map */

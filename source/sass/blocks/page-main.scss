@@ -5,10 +5,7 @@
     text-align: center;
 }
 
-.page-main__features-header {
-    background-color: $color-white;
-}
-
-.page-main__features {
-    background-color: $color-SW;
+.page-main__features-main {
+    background-image: url(/source/img/grey-background.png);
+    background-repeat: no-repeat;
 }
