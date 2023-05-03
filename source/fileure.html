@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINK</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="page">
+    <header class="page__header page-header">
+        <a href="#" class="page-header__logo logo">
+            <img class="logo__PINK" src="/source/img/pink-logo.svg" alt="Логотип PINK" height="23" width="74">
+        </a>
+        <nav class="page-header__nav">
+            <button class="page-header__toggler" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+        </nav>
+    </header>
+    <main class="page__main page-main">
+        <header class="page-main__header">
+            <h1 class="visually-hidden">Конкурс PINK</h1>
+            <p class="page-main__header-text">Конкурс на самое
+                безбашенное
+                путешествие с Пинк</p>
+        </header>
+        <section class="page-main__form form">
+            <h2 class="visually-hidden">Форма анкеты</h2>
+            <form class="form__body" method="post" action="https://echo.htmlacademy.ru/">
+                <fieldset class="form__group">
+                    <legend class="visually-hidden">Ф.И.О. клиента</legend>
+                    <p class="form__text">Поделитесь своей историей и получите
+                        шанс выиграть ценный приз — 1000
+                        миль на вашу бонусную карту!</p>
+                    <ul class="form__list">
+                        <li class="form__link">
+                            <label class="field">
+                                <span class="field__lead">ФАМИЛИЯ:</span>
+                                <input class="field__input" name="cat-name" type="text" placeholder="Укажите фамилию *"
+                                    required>
+                            </label>
+                        </li>
+                        <li class="form__link">
+                            <label class="field">
+                                <span class="field__lead">ИМЯ:</span>
+                                <input class="field__input" name="cat-name" type="text" placeholder="Введите Ваше имя *"
+                                    required>
+                            </label>
+                        </li>
+                        <li class="form__link">
+                            <label class="field">
+                                <span class="field__lead">ОТЧЕСТВО:</span>
+                                <input class="field__input" name="cat-name" type="text"
+                                    placeholder="Ну и отчество тоже " required>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__group form__group--background">
+                    <legend class="visually-hidden">Достижения</legend>
+                    <span class="form__group-text">Ваши безбашенные
+                        достижения в путешествии</span>
+                    <ul class="form__list">
+                        <li class="form__item">
+                            <label class="control control--checkbox">
+                                <input class="control__input" name="additional" type="checkbox" value="#" checked>
+                                <span class="control__lead">Сделать селфи с акулой</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control control--checkbox">
+                                <input class="control__input" name="additional" type="checkbox" value="#" checked>
+                                <span class="control__lead">Обгорел на пляже</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control control--checkbox">
+                                <input class="control__input" name="additional" type="checkbox" value="#" checked>
+                                <span class="control__lead">Видел Чака Норриса</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control control--checkbox">
+                                <input class="control__input" name="additional" type="checkbox" value="#" checked>
+                                <span class="control__lead">Накупил сувениров</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control control--checkbox">
+                                <input class="control__input" name="additional" type="checkbox" value="#" checked>
+                                <span class="control__lead">Удержал башню</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control control--checkbox">
+                                <input class="control__input" name="additional" type="checkbox" value="#" checked>
+                                <span class="control__lead">Разгромил отель</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__group">
+                    <legend class="visually-hidden">Телефон и e-mail</legend>
+                    <ul class="form__list">
+                        <li class="form__item">
+                            <label class="field">
+                                <span class="field__lead">НОМЕР ТЕЛЕФОНА</span>
+                                <input class="field__input" name="phone" type="tel" placeholder="Номер, пожалуйста"
+                                    required>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="field">
+                                <span class="field__lead">АДРЕС ПОЧТЫ</span>
+                                <input class="field__input" name="e-mail" type="email" placeholder="Введите почту *"
+                                    required>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </section>
+        <div class="popap">
+            <span class="popap__title">Что-то пошло не так!</span>
+            <p class="popap__text">Проверьте поля, выделенные красным,
+                скорее всего вы забыли их заполнить</p>
+            <button class="popap__button button" type="submit">ОК</button>
+        </div>
+    </main>
+</body>
+
+</html>
