@@ -4,7 +4,7 @@ import createWebp from 'gulp-webp';
 import { deleteAsync } from 'del';
 import getData from 'gulp-data';
 import gulp from 'gulp';
-import less from 'gulp-less';
+import sass from 'gulp-dart-sass';
 import minifyCss from 'postcss-csso';
 import minifyJs from 'gulp-terser';
 import optimizeImages from 'gulp-imagemin';
@@ -31,8 +31,8 @@ if (!isDev) {
 
 export const buildStyles = () => {
   return gulp
-    .src('source/less/style.less', { sourcemaps: true })
-    .pipe(less())
+    .src('source/sass/style.scss', { sourcemaps: isDev })
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss(postcssPlugins))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))

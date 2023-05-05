@@ -25,7 +25,7 @@
 
 .page-header__item {
   list-style-type: none;
-  background-color: rgb(40, 54, 69);
+  background-color: rgb(8, 127, 255);
 }
 
 .page-main__header-text {
@@ -69,7 +69,7 @@
 }
 
 .slider__table-header {
-  background-color: rgb(40, 54, 69);
+  background-color: rgb(8, 127, 255);
   color: rgb(255, 255, 255);
 }
 
