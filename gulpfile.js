@@ -127,7 +127,7 @@ const server = () => {
   });
 
   gulp.watch("source/layouts/**/*.twig", gulp.series(buildHtml, reload));
-  gulp.watch("source/less/**/*.less", buildStyles);
+  gulp.watch("source/Sass/**/*.Sass", buildStyles);
   gulp.watch("source/js/**/*.js", buildScripts);
   gulp.watch(
     ["source/img/**/*.{jpg,png,svg}", "!source/img/icon/**"],
