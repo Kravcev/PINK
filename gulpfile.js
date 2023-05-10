@@ -43,20 +43,7 @@ export const buildStyles = () => {
 
 const buildHtml = () => {
   return gulp
-    .src('source/layouts/pages/**/*.twig')
-    .pipe(
-      getData(({ path }) => {
-        const page = path
-          .replace(/^.*pages(\\+|\/+)(.*)\.twig$/, "$2")
-          .replace(/\\/g, "/");
-
-        return {
-          isDev,
-          page,
-        };
-      })
-    )
-    .pipe(twig())
+    .src('source/**/*.html')
     .pipe(posthtml())
     .pipe(gulp.dest('build'));
 }
@@ -126,8 +113,8 @@ const server = () => {
     ui: false,
   });
 
-  gulp.watch("source/layouts/**/*.twig", gulp.series(buildHtml, reload));
-  gulp.watch("source/Sass/**/*.Sass", buildStyles);
+  gulp.watch("source/**/*.html", gulp.series(buildHtml, reload));
+  gulp.watch("source/sass/**/*.scss", buildStyles);
   gulp.watch("source/js/**/*.js", buildScripts);
   gulp.watch(
     ["source/img/**/*.{jpg,png,svg}", "!source/img/icon/**"],
