@@ -1,14 +1,22 @@
 .page-main__header {
-    background-color: $color-dark;
-    background-image: url(/img/back-mobile.png);
-    color: $color-white;
-    text-align: center;
-    background-repeat: no-repeat;
-    height: 462px;
-
+  background-color: $color-dark;
+  background-image: url(/img/back-mobile.png);
+  color: $color-white;
+  text-align: center;
+  background-repeat: no-repeat;
+  height: 462px;
 }
-
-.page-main__features-main {
+  .page-main__features-main {
     background-image: url(/img/grey-background.png);
-    background-repeat: no-repeat;
-}
+  }
+
+  .page-main__mobile-phone-hand {
+    width: 320px;
+    height: 286px;
+    margin-top: 140px;
+  }
+
+  .page-main__tablet-phone-hand {
+    width: 660px;
+    height: 545px;
+  }
