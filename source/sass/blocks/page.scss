@@ -1,35 +1,9 @@
 .page {
   font-family: 'Open Sans';
-  min-height: $mobile;
   margin: auto;
   text-align: center;
-
-  @media ($mobile) {
-    .page-main__tablet-phone-hand {
-      display: none;
-    }
-
-    .logo__white-tablet {
-      display: none;
-    }
-  }
-
-  @media ($tablet) {
-
-    .page-main__mobile-phone-hand,
-    .logo__PINK {
-      display: none;
-    }
-
-    .page-main__header {
-      background-color: $color-dark;
-      background-image: url(/img/back-tablet.png);
-      color: $color-white;
-      text-align: center;
-      background-repeat: no-repeat;
-      height: 462px;
-    }
-  }
+  min-width: 320px;
+  max-width: 1200px;
 }
 
 .visually-hidden {

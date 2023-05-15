@@ -1,27 +1,27 @@
 .page__header {
-    background-color: $color-dark;
+  background-color: $color-dark;
 }
 
 .page-header__link {
-    color: $color-white;
-    text-decoration: none;
-
+  color: $color-white;
+  text-decoration: none;
 }
 
 .page-header__item {
-    list-style-type: none;
-    background-color: $color-dark-blue;
+  list-style-type: none;
+  background-color: $color-dark-blue;
 }
 
 .page-main__header-text {
-    color:$color-white;
+  color: $color-white;
 }
 
 .page-header__nav-header {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
 
 }
+
