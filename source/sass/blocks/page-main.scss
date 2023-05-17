@@ -7,6 +7,7 @@
   text-align: center;
   background-repeat: no-repeat;
   height: 462px;
+  width: 100%;
 }
 
 .page-main__features-main {
@@ -28,8 +29,7 @@
 @media ($mobile) {
 
   .page-main__tablet-phone-hand,
-  .logo__white-tablet,
-  .page-header__nav {
+  .logo__white-tablet {
     display: none;
   }
 }
