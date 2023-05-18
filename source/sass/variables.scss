@@ -1,3 +1,4 @@
+$color-glass:rgba(0, 0, 0, 0.25);
 $color-dark: rgba(29, 38, 49, 1);
 $color-white: rgba(255, 255, 255, 1);
 $color-SW: rgb(255, 255, 255);
@@ -6,6 +7,6 @@ $color-black: rgb(0, 0, 0);
 $color-light: rgba(255, 255, 255, 0.15);
 
 
-$mobile: "max-width: 659px";
-$tablet: "min-width: 660px";
-$desktop: "min-width: 1200px";
+$mobile: "min-width: 659px";
+$tablet: "max-width: 660px";
+$desktop: "max-width: 1200px";

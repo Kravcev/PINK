@@ -1,45 +1,13 @@
 .page-main__header {
-  display: block;
-  background-color: $color-dark;
-  background-image: url(/img/back-mobile.png);
-  margin: 0;
-  color: $color-white;
-  text-align: center;
-  background-repeat: no-repeat;
   height: 462px;
-  width: 100%;
-}
-
-.page-main__features-main {
-  background-image: url(/img/grey-background.png);
+  background-color: $color-dark;
+  background-image: url(../../img/back-mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .page-main__mobile-phone-hand {
-  width: 320px;
-  height: 286px;
   margin-top: 140px;
 }
-
-.page-main__tablet-phone-hand {
-  width: 660px;
-  height: 545px;
-}
-
-
-@media ($mobile) {
-
-  .page-main__tablet-phone-hand,
-  .logo__white-tablet {
-    display: none;
-  }
-}
-
-@media ($tablet) {
-
-  .page-main__mobile-phone-hand,
-  .logo__PINK {
-    display: none;
-  }
-}
-
 
