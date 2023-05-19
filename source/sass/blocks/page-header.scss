@@ -1,4 +1,31 @@
 .page-header {
-  background-color: $color-glass;
-  height: 66px;
+  height: 462px;
+  background-color: $color-dark;
+  background-image: url(../../img/back-mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
+
+.page-header__phone-hand--mobile {
+  margin-top: 55px;
+}
+
+.page-header__header {
+  background-color: $color-glass;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.page-header__slogan--mobile {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  color: $color-white;
+  margin: 0;
+}
+
