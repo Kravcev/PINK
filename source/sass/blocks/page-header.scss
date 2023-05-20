@@ -7,10 +7,6 @@
   background-size:cover;
 }
 
-.page-header__phone-hand--mobile {
-  margin-top: 55px;
-}
-
 .page-header__header {
   background-color: $color-glass;
   padding:20px;
@@ -21,11 +17,22 @@
 }
 
 .page-header__slogan--mobile {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
+  display: block;
   font-size: 24px;
   color: $color-white;
   margin: 0;
+  top:15px;
+  position: relative;
 }
 
+.page-header__phone-hand--mobile {
+  display: inline-block;
+  width: 320px;
+  height: 286px;
+  background-image: url(../../img/mobile-phone-hand.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top:51px;
+}
