@@ -5,34 +5,34 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-.page-header__header {
-  background-color: $color-glass;
-  padding:20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-}
+  &__header {
+    background-color: $color-glass;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
 
-.page-header__slogan--mobile {
-  display: block;
-  font-size: 24px;
-  color: $color-white;
-  margin: 0;
-  top:15px;
-  position: relative;
-}
+  &__slogan--mobile {
+    display: block;
+    font-size: 24px;
+    color: $color-white;
+    margin: 0;
+    top: 15px;
+    position: relative;
+  }
 
-.page-header__phone-hand--mobile {
-  display: inline-block;
-  width: 320px;
-  height: 286px;
-  background-image: url(../../img/mobile-phone-hand.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  top:51px;
+  &__phone-hand--mobile {
+    display: inline-block;
+    width: 320px;
+    height: 286px;
+    background-image: url(../../img/mobile-phone-hand.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 40px;
+  }
 }
