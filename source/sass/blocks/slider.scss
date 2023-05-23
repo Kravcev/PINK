@@ -1,13 +1,30 @@
 .slider {
-    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 364px;
 }
 
-.slider__table-header {
-    background-color: $color-dark-blue;
-    color: $color-white;
-}
-// slider__content
+.slider__box {
+  display: flex;
+  flex-direction: row;
 
+}
+
+.slider__reviews {
+  background-color: $color-white;
+  min-width: 320px;
+  position: relative;
+  height: 300px;
+}
+
+
+.slider__controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 19px;
+}
 // page-main__slider
 
 // slider__author
@@ -17,3 +34,9 @@
 // slider__button-carousel
 
 // slider__button-carousel--active
+
+
+.slider__table-header {
+  background-color: $color-dark-blue;
+  color: $color-white;
+}
