@@ -1,5 +1,5 @@
 .slider__blockquote {
-  
+
 }
 
  #frame {
@@ -105,10 +105,10 @@
 
             #frame1:checked~#controls label:nth-child(2),
             #frame2:checked~#controls label:nth-child(3),
-            #frame4:checked~#controls label:nth-child(1),
+            #frame3:checked~#controls label:nth-child(1),
             #frame1:checked~#controls label:nth-last-child(2),
             #frame2:checked~#controls label:nth-last-child(3),
-            #frame4:checked~#controls label:nth-last-child(1) {
+            #frame3:checked~#controls label:nth-last-child(1) {
                 margin: 0;
             }
 
