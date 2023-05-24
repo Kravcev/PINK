@@ -1,50 +1,119 @@
-.slider {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  height: 364px;
+.slider__blockquote {
+  
 }
 
-.slider__box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+ #frame {
+            margin: 0 auto;
+            width: 320px;
+            max-width: 100%;
+            text-align: center;
+        }
 
-.slider__reviews {
-  background-color: $color-white;
-  min-width: 320px;
-  position: relative;
-  height: 300px;
-}
+        #frame input[type=radio] {
+            display: none;
+        }
 
-.slider__author {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-}
+        #slides {
+            padding: 0;
+            border: none;
+            background: $color-white;
+            position: relative;
+            z-index: 1;
+        }
 
-.slider__controls {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 19px;
-}
+        #overflow {
+            width: 100%;
+            overflow: hidden;
+        }
 
-// page-main__slider
+        #frame1:checked~#slides .inner {
+            margin-left: 0;
+        }
 
+        #frame2:checked~#slides .inner {
+            margin-left: -100%;
+        }
 
+        #frame3:checked~#slides .inner {
+            margin-left: -200%;
+        }
 
-// slider__text
+        #slides .inner {
+            transition: margin-left 800ms
+                cubic-bezier(0.770, 0.000, 0.175, 1.000);
+            width: 400%;
+            line-height: 0;
+            height: 300px;
+        }
+        // стили текста
+        #slides .frame {
+            width: 25%;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #fa2222;
+        }
 
-// slider__button-carousel
+        #slides .frame_1 {
+            background: palevioletred;
+        }
 
-// slider__button-carousel--active
+        #slides .frame_2 {
+            background: pink;
+        }
 
+        #slides .frame_3 {
+            background: palegoldenrod;
+        }
 
-.slider__table-header {
-  background-color: $color-dark-blue;
-  color: $color-white;
-}
+        #controls {
+            margin: -180px 0 0 0;
+            width: 100%;
+            height: 50px;
+            z-index: 3;
+            position: relative;
+        }
+
+        #controls label:hover {
+            opacity: 1;
+        }
+
+        #bullets {
+            margin: 150px 0 0;
+            text-align: center;
+        }
+
+        #bullets label {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background: $color-gray;
+            margin: 0 10px;
+        }
+
+        #frame1:checked~#bullets label:nth-child(1),
+        #frame2:checked~#bullets label:nth-child(2),
+        #frame3:checked~#bullets label:nth-child(3) {
+            background: $color-gray;
+            border:3px solid $color-dark-blue;
+        }
+
+        @media screen and (max-width: 900px) {
+
+            #frame1:checked~#controls label:nth-child(2),
+            #frame2:checked~#controls label:nth-child(3),
+            #frame4:checked~#controls label:nth-child(1),
+            #frame1:checked~#controls label:nth-last-child(2),
+            #frame2:checked~#controls label:nth-last-child(3),
+            #frame4:checked~#controls label:nth-last-child(1) {
+                margin: 0;
+            }
+
+            #slides {
+                max-width: calc(100% - 140px);
+                margin: 0 auto;
+            }
+        }
