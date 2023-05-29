@@ -152,8 +152,23 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100%;
-  width: 320px;
-  margin: 0 auto;
-  overflow: hidden;
+  max-width: 1200px;
+  margin: auto auto;
+  // overflow: hidden;
   font-size: 100%;
+}
+
+.slider__table-header {
+  background-color: $color-dark-blue;
+  color: $color-white;
+  width: 276px;
+  height: 94px;
+}
+
+.slider__table-cell {
+
+  background-color: $color-white;
+  color: $color-black;
+  width: 276px;
+  height: 59px;
 }
