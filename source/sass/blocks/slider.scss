@@ -153,8 +153,6 @@
   background-position: bottom;
   background-size: 100%;
   max-width: 1200px;
-  margin: auto auto;
-  // overflow: hidden;
   font-size: 100%;
 }
 
@@ -166,9 +164,14 @@
 }
 
 .slider__table-cell {
-
   background-color: $color-white;
-  color: $color-black;
   width: 276px;
   height: 59px;
+}
+
+.slider__table-content {
+  color: $color-dark-blue;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
 }
