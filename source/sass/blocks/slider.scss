@@ -28,9 +28,7 @@
 #frame {
   margin: 0 auto;
   min-width: 320px;
-
   text-align: center;
-
 }
 
 #frame input[type=radio] {
@@ -74,8 +72,6 @@
   width: 25%;
   float: left;
   display: flex;
-  // justify-content: center;
-  // align-items: center;
   height: 100%;
   color: $color-black;
 }
@@ -146,14 +142,28 @@
 // почему то не подключается картинка заднего фона
 
 .slider__page-table {
-  height: 506px;
   background-color: $color-white;
   background-image: url(../../img/grey-background-min.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100%;
+  background-size:cover;
+  min-width: 320px;
   max-width: 1200px;
-  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slider__page-table::-webkit-scrollbar {
+  display: none;
+}
+
+.slider__table {
+  margin:143px auto 18px;
+  width: 828px;
+  min-width: 828px;
 }
 
 .slider__table-header {
@@ -161,6 +171,7 @@
   color: $color-white;
   width: 276px;
   height: 94px;
+  text-align: center;
 }
 
 .slider__table-cell {
@@ -172,6 +183,25 @@
 .slider__table-content {
   color: $color-dark-blue;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
+}
+
+.slider__button {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background: red;
+  list-style-type: none;
+  padding: 0;
+}
+
+.slider__button-carousel {
+  flex-direction: column;
+  justify-content: center;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  margin: auto;
 }
