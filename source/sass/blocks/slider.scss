@@ -141,23 +141,27 @@
 // // слайдер таблица тарифов
 // почему то не подключается картинка заднего фона
 
-.slider__page-table {
+.slider__content {
   background-color: $color-white;
   background-image: url(../../img/grey-background-min.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size:cover;
+  height: 506px;
   min-width: 320px;
   max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  overflow: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  overflow-x: auto;
 }
 
-.slider__page-table::-webkit-scrollbar {
+.slider__content::-webkit-scrollbar {
   display: none;
+}
+
+.slider__page-table {
+  display: flex;
+  justify-content: center;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .slider__table {
@@ -187,21 +191,32 @@
   align-items: center;
 }
 
-.slider__button {
-  width: 6px;
-  height: 6px;
-  border-radius: 100%;
-  background: red;
-  list-style-type: none;
+// .slider__button {
+// }
+
+.slider__button-list {
   padding: 0;
+  margin-top: 7px;
+}
+
+.slider__button-item {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .slider__button-carousel {
-  flex-direction: column;
-  justify-content: center;
   width: 6px;
   height: 6px;
-  border-radius: 50%;
+  border-radius: 100%;
   border: none;
-  margin: auto;
+  background: red;
+  padding: 0;
+}
+
+.slider__button-carousel--active {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  padding: 0;
 }
