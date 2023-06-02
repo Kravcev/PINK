@@ -1,25 +1,114 @@
-.slider__reviews {
-  margin-top: 43px;
-}
+.slider {
 
-.slider__author {
-  text-align: center;
-  width: auto;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-}
 
-.slider__text {
-  width: auto;
-  text-align: center;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
+  &__reviews {
+    margin-top: 43px;
+  }
+
+  &__author {
+    text-align: center;
+    width: auto;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__text {
+    width: auto;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  // // слайдер таблица тарифов
+
+  &__content {
+    background-color: $color-white;
+    background-image: url(../../img/grey-background-min.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 506px;
+    min-width: 320px;
+    overflow-x: auto;
+  }
+
+  &__content::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__page-table {
+    display: flex;
+    justify-content: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  &__table {
+    margin: 123px auto 18px;
+    width: 828px;
+    min-width: 828px;
+  }
+
+  &__table-header {
+    background-color: $color-dark-blue;
+    color: $color-white;
+    width: 276px;
+    height: 94px;
+    text-align: center;
+  }
+
+  &__table-cell {
+    background-color: $color-white;
+    width: 276px;
+    height: 59px;
+  }
+
+  &__table-content {
+    color: $color-dark-blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  // &__button {
+  // }
+
+  &__button-list {
+    padding: 0;
+    margin-top: 7px;
+  }
+
+  &__button-item {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  &__button-carousel {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    border: none;
+    background: $color-dark-blue;
+    opacity: 0.3;
+    padding: 0;
+  }
+
+  &__button-carousel--active {
+    width: 11px;
+    height: 11px;
+    background-color: $color-white;
+    border: 3px solid $color-dark-blue;
+    border-radius: 50%;
+    opacity: 1;
+    padding: 0;
+  }
 }
 
 // слайдер таблица отзывов о PINK,
@@ -101,7 +190,7 @@
 }
 
 #bullets {
-  margin: 120px 0 0;
+  margin: 120px 0 17px;
   text-align: center;
 }
 
@@ -110,7 +199,8 @@
   width: 6px;
   height: 6px;
   border-radius: 100%;
-  background: $color-gray;
+  background: $color-dark-blue;
+  opacity: 0.3;
   margin: -9px 8px;
 }
 
@@ -119,6 +209,7 @@
 #frame3:checked~#bullets label:nth-child(3) {
   background: $color-white;
   border: 3px solid $color-dark-blue;
+  opacity: 1;
 }
 
 @media screen and (max-width: 900px) {
@@ -136,87 +227,4 @@
     max-width: calc(100%);
     margin: 0 auto;
   }
-}
-
-// // слайдер таблица тарифов
-// почему то не подключается картинка заднего фона
-
-.slider__content {
-  background-color: $color-white;
-  background-image: url(../../img/grey-background-min.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size:cover;
-  height: 506px;
-  min-width: 320px;
-  max-width: 1200px;
-  overflow-x: auto;
-}
-
-.slider__content::-webkit-scrollbar {
-  display: none;
-}
-
-.slider__page-table {
-  display: flex;
-  justify-content: center;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.slider__table {
-  margin:143px auto 18px;
-  width: 828px;
-  min-width: 828px;
-}
-
-.slider__table-header {
-  background-color: $color-dark-blue;
-  color: $color-white;
-  width: 276px;
-  height: 94px;
-  text-align: center;
-}
-
-.slider__table-cell {
-  background-color: $color-white;
-  width: 276px;
-  height: 59px;
-}
-
-.slider__table-content {
-  color: $color-dark-blue;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-// .slider__button {
-// }
-
-.slider__button-list {
-  padding: 0;
-  margin-top: 7px;
-}
-
-.slider__button-item {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.slider__button-carousel {
-  width: 6px;
-  height: 6px;
-  border-radius: 100%;
-  border: none;
-  background: red;
-  padding: 0;
-}
-
-.slider__button-carousel--active {
-  width: 6px;
-  height: 6px;
-  border-radius: 100%;
-  padding: 0;
 }
