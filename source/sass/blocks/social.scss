@@ -1,0 +1,13 @@
+.social {
+  margin: 35px 0;
+  gap:8px;
+  &__link {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: 3px solid $color-gray;
+    justify-content: center;
+    align-items: center;
+  }
+}
