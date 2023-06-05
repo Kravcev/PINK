@@ -1,12 +1,14 @@
 .page-header {
-  height: 462px;
-  background-color: $color-dark;
-  background-image: url(../../img/back-mobile.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  &--mobile {
+    height: 462px;
+    background-color: $color-dark;
+    background-image: url(../../img/back-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-  &__header {
+  &__header--mobile {
     background-color: $color-glass;
     padding: 20px;
     display: flex;
