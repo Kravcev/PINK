@@ -8,54 +8,52 @@
   <title>PINK</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page">
-  <header class="page__page-header page-header page-header--mobile">
-    <div class="page-header__header page-header__header--mobile">
-      <a href="#" class="page-header__logo logo">
-        <img class="logo__pink logo__pink--mobile" src="img/pink-logo-mobile.svg" alt="Логотип PINK" height="23" width="74">
-      </a>
-      <a href="menu.html" class="page-header__toggler toggler">
-        <img class="toggler__open" src="img/open-menu-btn.svg" alt="Открыть меню" height="24" width="50">
-        <span class="visually-hidden">Открыть меню</span>
-      </a>
+  <header class="page__header header">
+    <div class="header__menu">
+      <div class="header__control header__control--static">
+        <div class="header__logo logo logo__header--mobile "onclick="location.href='#';">
+        </div>
+        <div class="header__menu-control logo logo__toggler--open"onclick="location.href='menu.html';">
+          </div>
+      </div>
+      <nav class="header__nav visually-hidden">
+        <ul class="header__nav-menu">
+          <li class="header__item">
+            <a href="#" class="header__link">ГЛАВНАЯ</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">ФОТОГРАФИИ</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">КОНКУРС</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="page-header__nav">
-      <ul class="page-header__menu visually-hidden">
-        <li class="page-header__item">
-          <a href="#" class="page-header__link">ГЛАВНАЯ</a>
-        </li>
-        <li class="page-header__item">
-          <a href="photo.html" class="page-header__link">ФОТОГРАФИИ</a>
-        </li>
-        <li class="page-header__item">
-          <a href="Form.html" class="page-header__link">КОНКУРС</a>
-        </li>
-        <li class="page-header__item">
-          <a href="#" class="page-header__link">HTML ACADEMY</a>
-        </li>
-      </ul>
-    </nav>
-
     <h1 class="visually-hidden">Приложение "PINK" помогает взглянуть на жизнь иначе</h1>
-    <p class="page-header__slogan page-header__slogan--mobile">Взгляните на жизнь<br>
+    <p class="header__slogan">Взгляните на жизнь 
       иначе!</p>
-    <div class="page-header__phone-hand--mobile"></div>
+    <div class="header__phone-hand"></div>
+  </header>
+<!--
 
   </header>
-  <main class="page__main page-main">
-    <section class="page-main__apps-download apps-download apps-download--style">
+  <main class="page__main page-main page-main--mobile">
+    <section class="page-main__apps-download apps-download apps-download--mobile">
       <h2 class="visually-hidden">Доступно для скачивания на iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </h2>
       <button class="apps-download__button apps-download__button--hover button">Скачать приложение</button>
-      <div class="apps-download__elements">
-        <img src="img/apple-logo.svg" alt="Скачать приложение для apple">
-        <img src="img/android-logo.svg" alt="Скачать приложение для android">
-        <img src="img/microsoft-logo.svg" alt="Скачать приложение для microsoft">
+      <div class="apps-download__element element">
+        <img class="element__apple" src="img/apple-logo.svg" alt="Скачать приложение для apple">
+        <img class="element__android" src="img/android-logo.svg" alt="Скачать приложение для android">
+        <img class="element__microsoft" src="img/microsoft-logo.svg" alt="Скачать приложение для microsoft">
       </div>
       <p class="apps-download__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
     </section>
@@ -87,62 +85,32 @@
       <div class="features__iphone3"></div>
     </section>
     <section class="page-main__slider slider">
-      <div id="frame">
-        <input type="radio" name="frame" id="frame1" checked>
-        <input type="radio" name="frame" id="frame2">
-        <input type="radio" name="frame" id="frame3">
-        <div id="slides">
-          <div id="overflow">
-            <div class="inner">
-              <div class="frame frame_1">
-                <div class="frame-content">
-                  <div class="slider__reviews">
-                    <h2 class="slider__author">Николай Петров</h2>
-                    <blockquote class="slider__blockquote">
-                      <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                        привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к
-                        выложенной фотографии!»</p>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-              <div class="frame frame_2">
-                <div class="frame-content">
-                  <div class="slider__reviews">
-                    <h2 class="slider__author">Николай Петров</h2>
-                    <blockquote class="slider__blockquote">
-                      <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                        привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к
-                        выложенной фотографии!»</p>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-              <div class="frame frame_3">
-                <div class="frame-content">
-                  <div class="slider__reviews">
-                    <blockquote class="slider__blockquote">
-                      <h2 class="slider__author">Николай Петров</h2>
-                      <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                        привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к
-                        выложенной фотографии!»</p>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="controls">
-          <label for="frame1"></label>
-          <label for="frame2"></label>
-          <label for="frame3"></label>
-        </div>
-        <div id="bullets">
-          <label for="frame1"></label>
-          <label for="frame2"></label>
-          <label for="frame3"></label>
-        </div>
+
+      <div class="slider__reviews">
+        <h2 class="slider__author">Николай Петров</h2>
+        <blockquote class="slider__blockquote">
+          <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к
+            выложенной фотографии!»</p>
+        </blockquote>
+      </div>
+
+      <div class="slider__reviews">
+        <h2 class="slider__author">Николай Петров</h2>
+        <blockquote class="slider__blockquote">
+          <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к
+            выложенной фотографии!»</p>
+        </blockquote>
+      </div>
+
+      <div class="slider__reviews">
+        <blockquote class="slider__blockquote">
+          <h2 class="slider__author">Николай Петров</h2>
+          <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к
+            выложенной фотографии!»</p>
+        </blockquote>
       </div>
     </section>
     <section class="page-main__slider slider">
@@ -232,7 +200,7 @@
               <button class="slider__button-carousel button"></button>
             </li>
             <li class="slider__button-item">
-              <button class="slider__button-carousel--active button"></button>
+              <button class="slider__button-carousel slider__button-carousel--active button"></button>
             </li>
             <li class="slider__button-item">
               <button class="slider__button-carousel button"></button>
@@ -329,7 +297,7 @@
         <img class="logo__html-academy" src="img/logo-footer-html-academy.svg" alt="Логотип html academy">
       </div>
     </address>
-  </footer>
+  </footer> -->
 </body>
 
 </html>

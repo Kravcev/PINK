@@ -1,9 +1,10 @@
 .page {
-  font-family: 'Open Sans';
-  text-align: center;
-  min-width: 320px;
-  margin: 0 auto;
-  background-color: $color-white;
+  background-color: bisque;
+  margin: 0;
+  &__header {
+    height: 733px;
+    min-width: 200px;
+  }
 }
 
 .visually-hidden {
