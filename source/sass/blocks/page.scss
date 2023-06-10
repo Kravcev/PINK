@@ -1,10 +1,11 @@
 .page {
-  background-color: bisque;
+  background-color: $color-light;
   margin: 0;
+  min-width: 316px;
   &__header {
     height: 733px;
-    min-width: 200px;
   }
+
 }
 
 .visually-hidden {
