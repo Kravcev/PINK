@@ -13,11 +13,15 @@
 
 <body class="page">
   <header class="page__header header">
-    <section class="header__menu">
+    <div class="header__menu">
       <h1 class="visually-hidden">Приложение "PINK" помогает взглянуть на жизнь иначе</h1>
       <div class="header__control header__control--static">
-        <a href="#" class="header__logo header__logo--mobile"></a>
-        <a href="menu.html" class="header__menu-control header__menu-control--open"></a>
+        <a href="#" class="header__logo header__logo--mobile">
+          <p class="visually-hidden">logo PINK</p>
+        </a>
+        <a href="menu.html" class="header__menu-control header__menu-control--open">
+          <p class="visually-hidden">toggler</p>
+        </a>
       </div>
       <nav class="header__nav visually-hidden">
         <ul class="header__nav-menu">
@@ -35,7 +39,7 @@
           </li>
         </ul>
       </nav>
-    </section>
+    </div>
     <p class="header__slogan">Взгляните на жизнь
       иначе!</p>
     <div class="header__phone-hand"></div>
@@ -45,7 +49,7 @@
       <h2 class="visually-hidden">Доступно для скачивания на iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </h2>
       <a class="apps-download__button apps-download__button--hover" href="#">
-        <p class="apps-download__button--text">Скачать приложение</p>
+        <p class="apps-download__button-text">Скачать приложение</p>
       </a>
       <div class="apps-download__element element">
         <img class="element__apple" src="img/apple-logo.svg" alt="Скачать приложение для apple">
@@ -55,172 +59,169 @@
       <p class="apps-download__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="main__features features">
-      <div class="features__header">
-        <p class="features__slogan">Устали от серости мегаполиса?</p>
-        <p class="features__slogan">Нам есть, что вам<br> предложить!</p>
+      <div class="features__box">
+        <div class="features__header">
+          <p class="features__slogan">Устали от серости мегаполиса?</p>
+          <p class="features__slogan">Нам есть, что вам<br> предложить!</p>
+        </div>
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features__pages">
+          <li class="features__content">
+            <h3 class="features__subtitle">Поднимает настроение</h3>
+            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию
+              буквально в несколько кликов!</p>
+          </li>
+          <li class="features__content">
+            <h3 class="features__subtitle">Меняет мир вокруг</h3>
+            <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+              чтобы усилить эффект</p>
+          </li>
+          <li class="features__content">
+            <h3 class="features__subtitle">Заводит новых друзей</h3>
+            <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+              заводите новых</p>
+          </li>
+        </ul>
+        <div class="features__iphone3">
+          <p class="visually-hidden">Изображение iphone 7</p>
+        </div>
       </div>
-      <h2 class="visually-hidden">Преимущества</h2>
-      <ul class="features__pages">
-        <li class="features__content">
-          <h3 class="features__subtitle">Поднимает настроение</h3>
-          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию
-            буквально в
-            несколько кликов!</p>
-        </li>
-        <li class="features__content">
-          <h3 class="features__subtitle">Меняет мир вокруг</h3>
-          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
-            чтобы
-            усилить эффект</p>
-        </li>
-        <li class="features__content">
-          <h3 class="features__subtitle">Заводит новых друзей</h3>
-          <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-            заводите новых</p>
-        </li>
-      </ul>
-      <div class="features__iphone3"></div>
     </section>
-  </main>
-</body>
 
-</html>
-<!-- <section class="page-main__features features">
-      <div class="features__header">
-        <p class="features__slogan">Устали от серости мегаполиса?</p>
-        <p class="features__slogan">Нам есть, что вам<br> предложить!</p>
-      </div>
-      <h2 class="visually-hidden">Преимущества</h2>
-      <ul class="features__pages">
-        <li class="features__content">
-          <h3 class="features__subtitle">Поднимает настроение</h3>
-          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию
-            буквально в
-            несколько кликов!</p>
-        </li>
-        <li class="features__content">
-          <h3 class="features__subtitle">Меняет мир вокруг</h3>
-          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
-            чтобы
-            усилить эффект</p>
-        </li>
-        <li class="features__content">
-          <h3 class="features__subtitle">Заводит новых друзей</h3>
-          <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-            заводите новых</p>
-        </li>
-      </ul>
-      <div class="features__iphone3"></div>
-    </section>
-    <section class="page-main__slider slider">
-
+    <section class="main__slider slider">
       <article class="slider__reviews">
         <h2 class="slider__author">Николай Петров</h2>
-        <blockquote class="slider__blockquote">
-          <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к
-            выложенной фотографии!»</p>
-        </blockquote>
+        <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+          привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к
+          выложенной фотографии!»</p>
       </article>
-
-    </section>
-    <section class="page-main__slider slider">
-      <div class="slider__content">
-        <div class="slider__page-table">
-          <h2 class="visually-hidden">Таблицы с ценами за тарифы</h2>
-          <table class="slider__table">
-            <tr>
-              <th class="slider__table-header">
-                <p>БАЗА</p>
-                <p>1,99 USD</p>
-              </th>
-              <th class="slider__table-header">
-                <p>СТАНДАРТ</p>
-                <p>3,99 USD</p>
-              </th>
-              <th class="slider__table-header">
-                <p>АНЛИМ</p>
-                <p>9,99 USD</p>
-              </th>
-            </tr>
-            <tr>
-              <td class="slider__table-cell">
-                <div class="slider__table-content">
-                  <p>Розовый фильтр</p>
-                  <img src="img/yes.svg" alt="yes" width="31" height="21">
-                </div>
-              </td>
-              <td class="slider__table-cell">
-                <div class="slider__table-content">
-                  <p>Розовый фильтр</p>
-                  <img src="img/yes.svg" alt="yes" width="31" height="21">
-                </div>
-              </td>
-              <td class="slider__table-cell">
-                <div class="slider__table-content">
-                  <p>Розовый фильтр</p>
-                  <img src="img/yes.svg" alt="yes" width="31" height="21">
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="slider__table-cell">
-                <div class="slider__table-content">
-                  <p>Комментарии</p>
-                  <img src="img/no.svg" alt="no" width="27" height="27">
-                </div>
-              </td>
-              <td class="slider__table-cell">
-                <div class="slider__table-content">
-                  <p>Смайлики</p>
-                  <img src="img/yes.svg" alt="yes" width="31" height="21">
-                </div>
-              </td>
-              <td class="slider__table-cell">
-                <div class="slider__table-content">
-                  <p>Смайлики</p>
-                  <img src="img/yes.svg" alt="yes" width="31" height="21">
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="slider__table-cell">
-                <div class="slider__table-content">
-                  <p>Комментарии</p>
-                  <img src="img/no.svg" alt="no" width="27" height="27">
-                </div>
-              </td>
-              <td class="slider__table-cell">
-                <div class="slider__table-content">
-                  <p>Комментарии</p>
-                  <img src="img/no.svg" alt="no" width="27" height="27">
-                </div>
-              </td>
-              <td class="slider__table-cell">
-                <div class="slider__table-content">
-                  <p>Комментарии</p>
-                  <img src="img/yes.svg" alt="yes" width="31" height="21">
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="slider__button">
-          <ul class="slider__button-list">
-            <li class="slider__button-item">
-              <button class="slider__button-carousel button"></button>
-            </li>
-            <li class="slider__button-item">
-              <button class="slider__button-carousel slider__button-carousel--active button"></button>
-            </li>
-            <li class="slider__button-item">
-              <button class="slider__button-carousel button"></button>
-            </li>
-          </ul>
-        </div>
+      <div class="slider__button-author button">
+        <ul class="button__list">
+          <li class="button__item">
+            <button class="button__label button__label--active button"></button>
+          </li>
+          <li class="button__item">
+            <button class="button__label button__label--static button"></button>
+          </li>
+          <li class="button__item">
+            <button class="button__label button__label--static button"></button>
+          </li>
+        </ul>
       </div>
     </section>
-    <section class="page-main__contacts contacts">
+    <section class="main__slider slider">
+      <div class="slider__page-table">
+        <h2 class="visually-hidden">Таблица с тарифами PINK</h2>
+        <table class="slider__table table">
+          <tr>
+            <th class="visually-hidden">
+            </th>
+            <th class="table__header">
+              <p class="table__rate">БАЗА</p>
+              <p class="table__price">1,99 USD</p>
+            </th>
+            <th class="table__header">
+              <p class="table__rate">СТАНДАРТ</p>
+              <p class="table__price">3,99 USD</p>
+            </th>
+            <th class="table__header">
+              <p class="table__rate">АНЛИМ</p>
+              <p class="table__price">9,99 USD</p>
+            </th>
+          </tr>
+          <tr>
+            <td class="table__cell visually-hidden">
+              <div class="table__content">
+                <p class="table__text">РОЗОВЫЙ ФИЛЬТР</p>
+              </div>
+            </td>
+            <td class="table__cell">
+              <div class="table__content">
+                <p class="table__text">РОЗОВЫЙ ФИЛЬТР</p>
+                <img class="table__img-yes" src="img/yes.svg" alt="yes">
+              </div>
+            </td>
+            <td class="table__cell">
+              <div class="table__content">
+                <p class="table__text">РОЗОВЫЙ ФИЛЬТР</p>
+                <img class="table__img-yes" src="img/yes.svg" alt="yes">
+              </div>
+            </td>
+            <td class="table__cell">
+              <div class="table__content">
+                <p class="table__text">РОЗОВЫЙ ФИЛЬТР</p>
+                <img class="table__img-yes" src="img/yes.svg" alt="yes">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell visually-hidden">
+              <div class="table__content">
+                <p class="table__text">СМАЙЛИКИ</p>
+              </div>
+            </td>
+            <td class="table__cell">
+              <div class="table__content">
+                <p class="table__text">СМАЙЛИКИ</p>
+                <img class="table__img-no" src="img/no.svg" alt="no">
+              </div>
+            </td>
+            <td class="table__cell">
+              <div class="table__content">
+                <p class="table__text">СМАЙЛИКИ</p>
+                <img class="table__img-yes" src="img/yes.svg" alt="yes">
+              </div>
+            </td>
+            <td class="table__cell">
+              <div class="table__content">
+                <p class="table__text">СМАЙЛИКИ</p>
+                <img class="table__img-yes" src="img/yes.svg" alt="yes">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell visually-hidden">
+              <div class="table__content">
+                <p class="table__text">КОММЕНТАРИИ</p>
+              </div>
+            </td>
+            <td class="table__cell">
+              <div class="table__content">
+                <p class="table__text">КОММЕНТАРИИ</p>
+                <img class="table__img-no" src="img/no.svg" alt="no">
+              </div>
+            </td>
+            <td class="table__cell">
+              <div class="table__content">
+                <p class="table__text">КОММЕНТАРИИ</p>
+                <img class="table__img-no" src="img/no.svg" alt="no">
+              </div>
+            </td>
+            <td class="table__cell">
+              <div class="table__content">
+                <p class="table__text">КОММЕНТАРИИ</p>
+                <img class="table__img-yes" src="img/yes.svg" alt="yes">
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="slider__button-table button">
+        <ul class="button__list">
+          <li class="button__item">
+            <button class="button__label button__label--static button"></button>
+          </li>
+          <li class="button__item">
+            <button class="button__label button__label--active button"></button>
+          </li>
+          <li class="button__item">
+            <button class="button__label button__label--static button"></button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="main__contacts contacts">
       <p class="contacts__text">
         Остались вопросы?<br>
         Свяжитесь с нами!
@@ -241,6 +242,13 @@
         </li>
       </ul>
     </section>
+  </main>
+</body>
+
+</html>
+
+<!--
+
     <div class="page-main__map map">
       <img class="map__triangle" src="img/triangle.png" alt="Угол на карте">
       <img class="map__geolocation" src="img/geolocation.svg" alt="маркер геопозиционирования" width="36" height="36">
