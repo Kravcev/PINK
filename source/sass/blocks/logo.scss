@@ -1,5 +1,38 @@
 .logo {
   cursor:pointer;
+
+  &__glasses {
+    width: 59px;
+    height: 40px;
+  }
+
+  &__pink {
+    width: 74px;
+    height: 23px;
+  }
+
+  &__pink--mobile-header {
+    fill: $color-white;
+  }
+
+  &__pink--mobile-header:hover {
+    fill: $color-pink;
+  }
+
+  &__glasses--mobile-footer {
+    fill: $color-pink;
+  }
+
+  &__pink--mobile-footer {
+
+    fill: $color-dark-blue;
+  }
+
+  &__pink--mobile-footer:hover {
+    width: 74px;
+    height: 23px;
+    fill: $color-pink;
+  }
 }
 
 
