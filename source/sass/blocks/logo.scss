@@ -1,5 +1,9 @@
 .logo {
   cursor:pointer;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 12px;
 
   &__glasses {
     width: 59px;
