@@ -1,8 +1,8 @@
 .logo {
   cursor:pointer;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: end;
   gap: 12px;
 
   &__glasses {
@@ -23,12 +23,21 @@
     fill: $color-pink;
   }
 
+  &__glasses--mobile-header {
+    fill: $color-white;
+    display: none;
+  }
+
+  &__glasses--mobile-header:hover {
+    fill: $color-pink;
+  }
+
   &__glasses--mobile-footer {
     fill: $color-pink;
   }
 
   &__pink--mobile-footer {
-
+    margin-top: auto;
     fill: $color-dark-blue;
   }
 
