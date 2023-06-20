@@ -1,0 +1,47 @@
+.slider {
+
+  // блок слайлов с отзовами пользователей
+  &__reviews {
+    padding: 26px 20px;
+    position: relative;
+    background-color: $color-white;
+    height: 237px;
+  }
+
+  &__author {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 14.5px 0;
+  }
+
+  &__text {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  // лист таблицы
+
+  &__page-table {
+    overflow: auto;
+    height: 506px;
+    background-image: url(../../img/grey-background-min.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  &__table {
+    padding-top: 123px;
+    margin: auto;
+    margin-left: auto;
+  }
+}

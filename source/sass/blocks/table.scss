@@ -1,0 +1,58 @@
+.table {
+
+  &__header {
+    width: 276px;
+    height: 47px;
+    background-color: $color-dark-blue;
+    color: $color-white;
+    padding: 15px 0 31px;
+  }
+
+  &__rate {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 0 5px;
+    color: $color-white;
+  }
+
+  &__price {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+    color: $color-white;
+  }
+
+  &__content {
+    width: 239px;
+    height: 57px;
+    padding: 0 17px 0 20px;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: $color-white;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    color: $color-dark-blue;
+  }
+
+  &__img-no {
+    width: 27px;
+    height: 27px;
+    padding: 0 2px;
+  }
+
+  &__img-yes {
+    width: 31px;
+    height: 21px;
+  }
+}

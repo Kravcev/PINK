@@ -1,0 +1,29 @@
+.map {
+  &--mobile {
+    background-image: url(../../img/map-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 233px;
+    width: 320px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  &__triangle {
+    position: absolute;
+    top:-57px;
+
+  }
+
+  &__geolocation {
+    position: absolute;
+    top: 128px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 36px;
+    height: 36px;
+  }
+}

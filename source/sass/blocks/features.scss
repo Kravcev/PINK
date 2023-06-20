@@ -1,0 +1,78 @@
+.features {
+  &__box {
+    height: 1002px;
+    background-color: $color-white;
+    background-image: url(../../img/grey-background.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    position: relative;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 20px 62px;
+    height: 147px;
+    align-items: center;
+
+  }
+
+  &__pages {
+    padding: 30px 23px 0;
+    margin: 0;
+  }
+
+  &__slogan {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0;
+    line-height: 120%;
+    color: $color-dark-blue;
+  }
+
+  &__content {
+    list-style-type: none;
+    text-align: center;
+
+  }
+
+  &__subtitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 19px 0 12px;
+
+  }
+
+  &__text {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 12px 0 31px;
+  }
+
+  &__iphone3 {
+    background-image: url(../../img/phone-mobile.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 157px;
+    height: 320px;
+    position: absolute;
+    bottom: -4.3%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,13 @@
+.toggler {
+  display: flex;
+  &__header {
+    width: 50px;
+    height: 24px;
+    fill: $color-white;
+    margin-top: auto;
+  }
+
+  &__header:hover {
+    fill: $color-pink;
+  }
+}

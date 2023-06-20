@@ -1,0 +1,15 @@
+.footer {
+
+  &__section {
+    min-height: 204px;
+    padding: 40px 0;
+  }
+
+  &__logo {
+    display: flex;
+    padding-bottom: 23px;
+    gap: 12px;
+    justify-content: center;
+  }
+
+}

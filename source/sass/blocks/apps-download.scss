@@ -1,0 +1,111 @@
+.apps-download {
+  height: 211px;
+  background-color: $color-dark-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 20px 31px;
+
+  &__button {
+    height: 49px;
+    width: 274px;
+    border: 3px solid $color-white;
+    border-radius: 29px;
+    background-color: $transparent-glass;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $color-white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+  }
+
+  &__button:hover {
+    background-color: $color-white;
+    color: $color-pink;
+  }
+
+  &__text {
+    margin: 0;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-white;
+  }
+
+  &__element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 3px;
+    align-items: end;
+  }
+}
+
+@media($mobile) {
+  .apps-download {
+    background-color: $transparent-glass;
+    display:flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 348px;
+    max-height: 239px;
+    padding: 20px;
+    left: -24px;
+    bottom: -137px;
+
+    &__button {
+      height: 49px;
+      width: 294px;
+      border: 3px solid $color-white;
+      border-radius: 29px;
+      background-color: $transparent-glass;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: $color-white;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      text-decoration: none;
+    }
+
+    &__button:hover {
+      background-color: $color-white;
+      color: $color-pink;
+    }
+
+    &__text {
+      margin: 0;
+      text-align: center;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+      color: $color-white;
+    }
+
+    &__element {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-top: 3px;
+      align-items: end;
+    }
+  }
+}

@@ -1,9 +1,7 @@
 .logo {
-  cursor:pointer;
-
+  cursor: pointer;
 
   &__glasses {
-    display: flex;
     width: 59px;
     height: 40px;
   }
@@ -11,38 +9,51 @@
   &__pink {
     width: 74px;
     height: 23px;
-    align-items: end;
   }
 
-  &__pink--mobile-header {
+  &__pink--header {
     fill: $color-white;
   }
 
-  &__pink--mobile-header:hover {
+  &__pink--header:hover {
     fill: $color-pink;
   }
 
-  &__glasses--mobile-header {
+  &__glasses--header {
     fill: $color-white;
     display: none;
   }
 
-  &__glasses--mobile-header:hover {
+  &__glasses--header:hover {
     fill: $color-pink;
   }
 
-  &__glasses--mobile-footer {
+  &__glasses--footer {
     fill: $color-pink;
   }
 
-  &__pink--mobile-footer {
+  &__pink--footer {
     margin-top: auto;
     fill: $color-dark-blue;
   }
 
-  &__pink--mobile-footer:hover {
+  &__pink--footer:hover {
     fill: $color-pink;
   }
 }
+@media($mobile) {
+  .logo {
+    &__glasses--header {
+      fill: $color-white;
+      display: initial;
+    }
 
+    &__pink {
+      width: 74px;
+      height: 23px;
+      display: flex;
+      margin-top: auto;
+    }
+  }
+}
 
