@@ -1,12 +1,16 @@
 .header {
-  background-color: $color-dark-blue;
-  background-image: url(../../img/back-mobile.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
   position: relative;
-  height: 462px;
+
+  &__main {
+    background-color: $color-dark-blue;
+    background-image: url(../../img/back-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+    height: 462px;
+  }
 
   &__menu {
     position: absolute;
@@ -105,14 +109,16 @@
 
 @media ($mobile) {
   .header {
-    background-color: $color-dark-blue;
-    background-image: url(../../img/back-tablet.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    position: relative;
-    height: 729px;
+    &__main {
+      background-color: $color-dark-blue;
+      background-image: url(../../img/back-tablet.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      position: relative;
+      height: 729px;
+    }
 
     &__control--static {
       background-color: $color-glass;
@@ -141,17 +147,20 @@
 
 @media ($tablet) {
   .header {
-    display: grid;
-    position: relative;
-    grid-template-columns: 20px 300px 340px;
-    grid-template-rows: 204px 406px 119px;
+
+    &__main {
+      display: grid;
+      position: relative;
+      grid-template-columns: 20px 300px 340px;
+      grid-template-rows: 204px 126px 280px 119px;
+    }
 
     &__slogan {
       grid-row: 2 / 3;
       grid-column: 2 / 3;
       display: flex;
       justify-content: center;
-      margin:0 auto;
+      margin: 0 auto;
       align-items: start;
       width: 186px;
       color: $color-white;
