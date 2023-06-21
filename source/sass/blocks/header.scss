@@ -70,7 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 20px 29px;
     height: 147px;
     color: $color-white;
@@ -135,8 +135,27 @@
       margin: auto;
       width: 660px;
       height: 545px;
+    }
+  }
+}
 
-      display: none;
+@media ($tablet) {
+  .header {
+    display: grid;
+    position: relative;
+    grid-template-columns: 20px 300px 340px;
+    grid-template-rows: 204px 406px 119px;
+
+    &__slogan {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      display: flex;
+      justify-content: center;
+      margin:0 auto;
+      align-items: start;
+      width: 186px;
+      color: $color-white;
+      font-size: 40px;
     }
   }
 }

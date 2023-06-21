@@ -1,9 +1,11 @@
 .main {
+  // display: grid;
+  position: relative;
+
   &__slider {
     position: relative;
   }
 
-  // &__contacts {
-  //   height: ;
-  // }
-  }
+}
+
+
