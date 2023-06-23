@@ -5,14 +5,14 @@
     background-image: url(../../img/grey-background.png);
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: contain;
+    background-size: 100vw 827px;
     position: relative;
   }
 
   &__header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding: 40px 20px 62px;
     height: 147px;
     align-items: center;

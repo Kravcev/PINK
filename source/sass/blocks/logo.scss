@@ -41,7 +41,8 @@
     fill: $color-pink;
   }
 }
-@media($mobile) {
+
+@media($tablet) {
   .logo {
     &__glasses--header {
       fill: $color-white;
@@ -57,3 +58,7 @@
   }
 }
 
+
+@media ($tablet) {
+
+}

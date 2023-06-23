@@ -10,6 +10,6 @@ $color-pink: rgba(210, 40, 86, 1);
 $color-smoke: rgb(94, 94, 110);
 
 
-$mobile: "min-width: 659px";
+$mobile: "max-width: 659px";
 $tablet: "min-width: 660px";
-$desktop: "max-width: 1200px";
+$desktop: "min-width: 1200px";

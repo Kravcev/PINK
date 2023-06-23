@@ -16,6 +16,7 @@
     position: absolute;
     right: 0;
     left: 0;
+    z-index: 99;
   }
 
   &__control--static {
@@ -42,12 +43,14 @@
     text-decoration: none;
     padding: 0;
     background-color: $color-dark-blue;
+
   }
 
   &__item {
     border-bottom: 1px solid $color-black;
     border-top: 1px solid $color-smoke;
     list-style-type: none;
+
   }
 
   &__link {
@@ -107,7 +110,7 @@
   }
 }
 
-@media ($mobile) {
+@media ($tablet) {
   .header {
     &__main {
       background-color: $color-dark-blue;
@@ -115,40 +118,8 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      display: flex;
       position: relative;
       height: 729px;
-    }
-
-    &__control--static {
-      background-color: $color-glass;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 27px 20px 43px 20px;
-      position: relative;
-    }
-
-    &__phone-hand {
-      position: absolute;
-      background-image: url(../../img/tablet-phone-hand.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      bottom: 0;
-      text-align: center;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 660px;
-      height: 545px;
-    }
-  }
-}
-
-@media ($tablet) {
-  .header {
-
-    &__main {
       display: grid;
       position: relative;
       grid-template-columns: 20px 300px 340px;
@@ -166,5 +137,32 @@
       color: $color-white;
       font-size: 40px;
     }
+
+    &__phone-hand {
+      position: absolute;
+      background-image: url(../../img/tablet-phone-hand.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      bottom: 0;
+      text-align: center;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 660px;
+      height: 545px;
+    }
+        &__control--static {
+      background-color: $color-glass;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 27px 20px 43px 20px;
+      position: relative;
+    }
   }
+}
+
+
+@media ($tablet) {
+
 }
