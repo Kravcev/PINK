@@ -12,7 +12,7 @@
   &__header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     padding: 40px 20px 62px;
     height: 147px;
     align-items: center;
@@ -74,5 +74,22 @@
     margin-right: auto;
     left: 0;
     right: 0;
+  }
+}
+
+@media ($tablet) {
+  .features {
+    &__header {
+      justify-content: space-between;
+      padding: 53px 20px 21px;
+      height: 149px;
+      align-items: center;
+    }
+
+    &__slogan {
+      font-family: 'Open Sans';
+      font-size: 40px;
+      font-weight: 300;
+    }
   }
 }

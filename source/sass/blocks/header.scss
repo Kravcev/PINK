@@ -75,7 +75,7 @@
 
   &__slogan {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: end;
     margin: 0 auto;
     padding: 0 20px 29px;
@@ -110,7 +110,7 @@
   }
 }
 
-@media ($tablet) {
+@media ($tablet){
   .header {
     &__main {
       background-color: $color-dark-blue;
@@ -129,8 +129,6 @@
     &__slogan {
       grid-row: 2 / 3;
       grid-column: 2 / 3;
-      display: flex;
-      justify-content: center;
       margin: 0 auto;
       align-items: start;
       width: 186px;
@@ -163,6 +161,6 @@
 }
 
 
-@media ($tablet) {
+// @media ($desctop) {
 
-}
+// }
