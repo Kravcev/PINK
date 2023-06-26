@@ -79,17 +79,68 @@
 
 @media ($tablet) {
   .features {
+    &__box {
+      background-image: url(../../img/grey-background-tablet.png);
+      height: 725px;
+      background-size: 100vw 495px;
+    }
+
     &__header {
-      justify-content: space-between;
+      justify-content: center;
       padding: 53px 20px 21px;
       height: 149px;
       align-items: center;
     }
 
     &__slogan {
-      font-family: 'Open Sans';
-      font-size: 40px;
+      font-style: normal;
       font-weight: 300;
+      font-size: 40px;
+      margin: 0;
+      line-height: 55px;
+    }
+
+    &__pages {
+      display: flex;
+      flex-direction: column;
+      padding: 57px 23px 0;
+      margin: 0 auto;
+      width: 610px;
+    }
+
+    &__content {
+      align-self: flex-end;
+      width: 305px;
+    }
+
+    &__subtitle {
+      text-align: start;
+      margin: 34px 0 12px;
+    }
+
+    &__text {
+      text-align: start;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      margin: 0;
+    }
+
+    &__iphone3 {
+      background-image: url(../../img/phone-tablet.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 268px;
+      height: 547px;
+      position: absolute;
+      bottom: -4.3%;
+      margin-left: auto;
+      margin-right: auto;
+      left: -351px;
+      top: 243px;
     }
   }
 }
