@@ -46,3 +46,44 @@
     margin-left: auto;
   }
 }
+
+@media ($tablet) {
+  .slider {
+    &__reviews {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 195px;
+      padding: 20px 5px;
+    }
+
+    &__author {
+      order: 2;
+      font-family: "Open Sans";
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      margin: 0;
+    }
+
+    &__about {
+      order: 3;
+      font-size: 14px;
+      font-family: "Open Sans";
+      font-weight: 400;
+      line-height: 30px;
+      display: initial;
+      margin: 0;
+    }
+
+    &__text {
+      margin: 0;
+      font-size: 18px;
+      font-family: 'Open Sans';
+      font-weight: 400;
+      line-height: 30px;
+      order: 1;
+      margin: 0 0 36px;
+    }
+  }
+}
