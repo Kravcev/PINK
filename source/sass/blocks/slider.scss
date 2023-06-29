@@ -31,19 +31,19 @@
 
   &__page-table {
     overflow: auto;
-    height: 506px;
     background-image: url(../../img/grey-background-min.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100vw 506px;
     padding: 0;
     padding-top: 10px;
+
   }
 
   &__table {
     padding-top: 123px;
+    padding-bottom: 99px;
     margin: auto;
-    margin-left: auto;
   }
 }
 
@@ -54,7 +54,7 @@
       flex-direction: column;
       text-align: center;
       height: 195px;
-      padding: 20px 5px;
+      padding: 20px 16px;
     }
 
     &__author {
@@ -77,13 +77,23 @@
     }
 
     &__text {
-      margin: 0;
+      margin: 0 0 35px;
       font-size: 18px;
       font-family: 'Open Sans';
       font-weight: 400;
       line-height: 30px;
       order: 1;
-      margin: 0 0 36px;
+    }
+
+    &__page-table {
+      background-image: url(../../img/grey-background-min-tablet.png);
+      background-size: -1vw 364px;
+      padding: 0 0 34px;
+    }
+    &__table {
+      padding-top: 108px;
+      padding-bottom: 142px;
+      margin: auto;
     }
   }
 }

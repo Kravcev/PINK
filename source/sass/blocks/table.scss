@@ -1,11 +1,10 @@
 .table {
 
   &__header {
-    width: 276px;
     height: 47px;
     background-color: $color-dark-blue;
     color: $color-white;
-    padding: 15px 0 31px;
+    padding: 17px 0 31px;
   }
 
   &__rate {
@@ -28,8 +27,8 @@
 
   &__content {
     width: 239px;
-    height: 57px;
-    padding: 0 17px 0 20px;
+    height: 56.2px;
+    padding: 0 17px 0 19px;
     display: inline-flex;
     justify-content: space-between;
     background-color: $color-white;
@@ -54,5 +53,84 @@
   &__img-yes {
     width: 31px;
     height: 21px;
+  }
+
+  &__cell-left {
+    display: none;
+  }
+  &__none {
+    display: none;
+  }
+}
+
+@media ($tablet) {
+  .table {
+    &__header {
+      height: 47px;
+      background-color: $color-dark-blue;
+      color: $color-white;
+      padding: 16px 0 14px;
+    }
+
+    &__rate {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      margin: 0 0 3px;
+      color: $color-white;
+    }
+
+    &__price {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      margin: 0;
+      color: $color-white;
+    }
+
+    &__content {
+      width: 115px;
+      height: 42.2px;
+      padding: 0 17px 0 19px;
+      display: inline-flex;
+      justify-content: space-between;
+      background-color: $color-white;
+      align-items: center;
+    }
+
+    &__text {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      margin: 0;
+      color: $color-dark-blue;
+      display: none;
+    }
+
+    &__img-no {
+      width: 27px;
+      height: 27px;
+      padding: 0 2px;
+      margin: 0 auto;
+    }
+
+    &__img-yes {
+      width: 31px;
+      height: 21px;
+      margin: 0 auto;
+    }
+
+    &__cell-left {
+      display: flex;
+      width: 150px;
+      height: 40px;
+    }
+    &__none {
+      display: flex;
+      height: 75px;
+    }
   }
 }

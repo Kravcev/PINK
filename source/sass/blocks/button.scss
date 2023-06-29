@@ -58,3 +58,19 @@
     fill: $color-pink;
   }
 }
+
+@media($tablet) {
+  .button {
+    &--table {
+      display: none;
+    }
+  }
+}
+
+@media($desktop) {
+  .button {
+    &--table {
+      display: none;
+    }
+  }
+}
