@@ -1,0 +1,67 @@
+
+.promo {
+  background-color: $color-white;
+  position: relative;
+  height: 410px;
+  width: 660px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+
+  &__img {
+    position: absolute;
+    width: 238px;
+    height: 276px;
+    top: 54px;
+    left: 20px;
+  }
+
+  &__list {
+    width: 330px;
+    height: 217px;
+    padding: 0;
+  }
+
+  &__content {
+    align-self: flex-end;
+    width: 330px;
+    list-style-type: none;
+
+  }
+
+  &__title {
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 0;
+  }
+
+  &__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px 0;
+  }
+
+  &__link {
+    color: $color-pink;
+    z-index: 1;
+  }
+
+  &__link:hover {
+    color: $color-dark-blue;
+    z-index: 1;
+  }
+}
+
+
+@media($mobile) {
+  .promo {
+    display: none;
+  }
+}
