@@ -49,3 +49,66 @@
     padding-bottom: 21px;
   }
 }
+
+@media ($tablet) {
+  .contacts {
+
+    &__text--big {
+      font-size: 40px;
+      padding: 44px 0 34px;
+      line-height: 137%;
+    }
+
+    &__section {
+      text-align: center;
+    }
+
+    &__title {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      margin: 0;
+    }
+
+    &__content--bright-text {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 33px;
+      margin: 0;
+      color: $color-pink;
+      text-decoration: none;
+    }
+
+    &__content--bright-text:hover {
+      color: $color-dark-blue;
+      text-decoration: underline;
+    }
+
+    &__item {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    &__section--call {
+      padding:0 0 43px 20px;
+      font-size: 24px;
+      line-height: 25px;
+    }
+
+    &__section--emile {
+      padding: 0 2px 43px 0;
+      font-size: 24px;
+      line-height: 25px;
+    }
+
+    &__section--address {
+      font-size: 24px;
+      line-height: 25px;
+      grid-column: 1 / 3;
+    }
+  }
+}

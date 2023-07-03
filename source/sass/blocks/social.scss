@@ -47,3 +47,13 @@
     left: 17px;
   }
 }
+
+@media ($tablet) {
+  .social {
+    &__page {
+      gap: 9px;
+      justify-content: start;
+      margin: 0;
+    }
+  }
+}

@@ -93,20 +93,21 @@
     &__content {
       width: 115px;
       height: 42.2px;
-      padding: 0 17px 0 19px;
+      padding: 0 17px 0 20px;
       display: inline-flex;
       justify-content: space-between;
       background-color: $color-white;
       align-items: center;
     }
-
-    &__text {
+    &__text-left {
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       margin: 0;
       color: $color-dark-blue;
+    }
+    &__text {
       display: none;
     }
 
@@ -124,12 +125,14 @@
     }
 
     &__cell-left {
-      display: flex;
       width: 150px;
       height: 40px;
+      background-color: $color-white;
+      display: revert;
     }
+
     &__none {
-      display: flex;
+      display: revert;
       height: 75px;
     }
   }

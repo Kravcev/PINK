@@ -59,14 +59,14 @@
     height: 64px;
     background-color: $color-dark-blue;
     color: $color-white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 32px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // font-family: 'Open Sans';
+    // font-style: normal;
+    // font-weight: 700;
+    // font-size: 18px;
+    // line-height: 32px;
   }
 
   &__link:hover {
@@ -106,11 +106,12 @@
   &__section-logo {
     align-items: end;
     display: flex;
+    justify-content: space-between;
     gap: 12px;
   }
 }
 
-@media ($tablet){
+@media ($tablet) {
   .header {
     &__main {
       background-color: $color-dark-blue;
@@ -149,6 +150,7 @@
       width: 660px;
       height: 545px;
     }
+
     &__control--static {
       background-color: $color-glass;
       display: flex;
@@ -161,6 +163,21 @@
 }
 
 
-// @media ($desctop) {
+@media ($desktop) {
+  .header {
+    &__main {
+      background-image: url(../../img/back-desktop.png);
+      height: 853px;
+    }
 
-// }
+    &__phone-hand {
+      background-image: url(../../img/desktop-phone-hand.png);
+      width: 1050px;
+      height: 645px;
+    }
+
+    // &__nav {
+
+    // }
+  }
+}

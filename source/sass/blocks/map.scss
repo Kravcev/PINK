@@ -1,5 +1,5 @@
 .map {
-  &--mobile {
+  &--version {
     background-image: url(../../img/map-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -13,7 +13,8 @@
 
   &__triangle {
     position: absolute;
-    top:-57px;
+    top: -57px;
+    left: -440px;
   }
 
   &__geolocation {
@@ -24,5 +25,31 @@
     margin: 0 auto;
     width: 36px;
     height: 36px;
+  }
+}
+
+@media ($tablet) {
+  .map {
+    &--version {
+      background-image: url(../../img/map-tablet.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      height: 390px;
+      width: 660px;
+      position: relative;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    &__triangle {
+      position: absolute;
+      top: -40px;
+      left: -271px;
+    }
+
+    &__geolocation {
+      top: 210px;
+    }
   }
 }

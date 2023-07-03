@@ -1,6 +1,12 @@
 .logo {
   cursor: pointer;
 
+  &__link {
+    display: flex;
+    height: 40px;
+    gap:12px;
+  }
+
   &__glasses {
     width: 59px;
     height: 40px;
@@ -40,20 +46,106 @@
   &__pink--footer:hover {
     fill: $color-pink;
   }
+
+  &__glasses--header-tablet {
+    fill: $color-white;
+    display: none;
+  }
+
+  &__glasses--header-desktop {
+    width: 147px;
+    height: 40px;
+    fill: $color-white;
+    display: none;
+  }
+
+  &__pink--footer-desktop {
+    display: none;
+  }
+
+  &__glasses--footer-desktop {
+    display: none;
+  }
 }
 
 @media($tablet) {
   .logo {
-    &__glasses--header {
+    &__glasses--header-tablet {
       fill: $color-white;
-      display: initial;
+      display: revert;
+
     }
 
     &__pink {
       width: 74px;
       height: 23px;
-      display: flex;
+    }
+
+    &__pink--header {
       margin-top: auto;
+    }
+
+    &__pink--footer-tablet {
+      fill: $color-dark-blue;
+      margin: 0;
+    }
+
+    &__glasses--footer-tablet {
+      fill: $color-pink;
+      margin-bottom: auto;
+    }
+
+    &__glasses--header-desktop {
+      display: none;
+    }
+
+    &__pink--footer-desktop {
+      display: none;
+    }
+
+    &__glasses--footer-desktop {
+      display: none;
+    }
+  }
+}
+
+@media($desktop) {
+  .logo {
+    &__glasses--header-tablet {
+      display: none;
+    }
+
+    &__glasses--footer-tablet {
+      display: none;
+    }
+
+    &__pink--footer-tablet {
+      display: none;
+    }
+
+    &__glasses--header-desktop {
+      width: 147px;
+      height: 40px;
+      fill: $color-white;
+      display: initial;
+    }
+
+    &__glasses--header-desktop:hover {
+      fill: $color-pink;
+    }
+
+    &__pink {
+      display: none;
+    }
+
+    &__pink--footer-desktop {
+      fill: $color-dark-blue;
+      margin: 0;
+    }
+
+    &__glasses--footer-desktop {
+      fill: $color-pink;
+      margin-bottom: auto;
     }
   }
 }

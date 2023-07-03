@@ -72,7 +72,7 @@
       font-family: "Open Sans";
       font-weight: 400;
       line-height: 30px;
-      display: initial;
+      display: revert;
       margin: 0;
     }
 
@@ -87,12 +87,12 @@
 
     &__page-table {
       background-image: url(../../img/grey-background-min-tablet.png);
-      background-size: -1vw 364px;
+      background-size: 100vw 391px;
       padding: 0 0 34px;
     }
     &__table {
       padding-top: 108px;
-      padding-bottom: 142px;
+      padding-bottom: 34px;
       margin: auto;
     }
   }
