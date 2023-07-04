@@ -144,3 +144,18 @@
     }
   }
 }
+
+@media ($desktop) {
+  .features {
+    &__header {
+      padding: 79px 20px 62px;
+      height: 169px;
+    }
+
+    &__slogan {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 68px;
+    }
+  }
+}

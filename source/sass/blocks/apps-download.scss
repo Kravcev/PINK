@@ -107,3 +107,22 @@
     }
   }
 }
+
+
+@media ($desktop) {
+  .apps-download {
+    height: 278px;
+    left: 118px;
+    bottom: 125px;
+    width: 323px;
+
+    &__button {
+      font-size: 21px;
+    }
+
+    &__element {
+      gap: 35px;
+      padding-top: 13px;
+  }
+}
+}
