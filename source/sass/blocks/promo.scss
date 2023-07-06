@@ -77,6 +77,7 @@
     &__text-desktop {
       display: none;
     }
+
     &__title-desktop {
       display: none;
     }
@@ -87,21 +88,28 @@
   .promo {
     background-color: $color-gray;
     position: relative;
-    height: 410px;
+    height:  536px;
     width: 100%;
+
+    &__box {
+      position: relative;
+      width: 1200px;
+      margin: 0 auto;
+    }
 
     &__img {
       position: absolute;
-      width: 298px;
-      height: 417px;
-      top: -18px;
-      left: 131px;
-      margin:0;
+      width: 301px;
+      height: 422px;
+      top: -104px;
+      left: 129px;
+      margin: 0;
     }
 
     &__list {
       width: 700px;
-      height: 245px;
+      height: 113px;
+      margin-left: auto;
     }
 
     &__title {
@@ -143,6 +151,4 @@
       line-height: 30px;
     }
   }
-
-
 }
