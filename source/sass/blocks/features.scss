@@ -149,14 +149,14 @@
   .features {
     &__box {
       background-image: url(../../img/grey-background-desktop.png);
-      height: 825px;
+      height: 932px;
       background-size: 100vw 495px;
       z-index: 1;
     }
 
     &__header {
-      padding: 79px 20px 376px;
-      height: 169px;
+      padding: 75px 20px 376px;
+      height: 182px;
     }
 
     &__slogan {
@@ -173,17 +173,19 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      padding: 22px 0px 0;
-      gap: 79px;
-      min-width: 1200px;
-      background-color: $color-gray;
+      padding: 0;
+      gap: 20px;
+      min-width: 100%;
       position: relative;
+      height: 200px;
     }
 
     &__content {
+      padding: 0 30px;
       width: 241px;
       height: 209px;
       z-index: 3;
+      background-color: $color-gray;
     }
 
     &__subtitle {
@@ -191,7 +193,7 @@
       font-weight: 700;
       line-height: 30px;
       text-align: center;
-      margin: 34px 0 22px;
+      margin: 56px 0 22px;
     }
 
     &__text {
@@ -209,8 +211,8 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: 137px;
-      min-width: 1200px;
+      gap: 12px;
+      min-width: 100%;
     }
 
     &__iphone1 {
@@ -218,8 +220,8 @@
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: contain;
-      width: 186px;
-      height: 382px;
+      width: 308px;
+      height: 381px;
     }
 
     &__iphone2 {
@@ -227,8 +229,8 @@
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: contain;
-      width: 186px;
-      height: 382px;
+      width: 308px;
+      height: 381px;
     }
 
     &__iphone3 {
@@ -236,8 +238,8 @@
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: contain;
-      width: 186px;
-      height: 382px;
+      width: 308px;
+      height: 381px;
     }
   }
 }
