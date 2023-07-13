@@ -4,7 +4,7 @@
   &__link {
     display: flex;
     height: 40px;
-    gap:12px;
+    gap: 12px;
   }
 
   &__glasses {
@@ -118,6 +118,10 @@
       display: none;
     }
 
+    &__pink--header {
+      display: none;
+    }
+
     &__pink--footer-tablet {
       display: none;
     }
@@ -133,18 +137,24 @@
       fill: $color-pink;
     }
 
-    &__pink {
+    &__pink--footer {
+      display: none;
+    }
+
+    &__glasses--footer {
       display: none;
     }
 
     &__pink--footer-desktop {
       fill: $color-dark-blue;
-      margin: 0;
+      display: revert;
+      width: 147px;
+      height: 40px;
+      margin-bottom: 16px;
     }
 
-    &__glasses--footer-desktop {
+    &__pink--footer-desktop:hover {
       fill: $color-pink;
-      margin-bottom: auto;
     }
   }
 }

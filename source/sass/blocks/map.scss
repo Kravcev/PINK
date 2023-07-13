@@ -53,3 +53,26 @@
     }
   }
 }
+
+@media ($desktop) {
+  .map {
+    &--version {
+      background-image: url(../../img/map-desktop.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      height: 521px;
+      width: 1200px;
+    }
+
+    &__triangle {
+      position: absolute;
+      top: -1px;
+      left: 0;
+    }
+
+    &__geolocation {
+      top: 283px;
+    }
+  }
+}

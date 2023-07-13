@@ -5,6 +5,7 @@
     background-color: $color-dark-blue;
     color: $color-white;
     padding: 17px 0 31px;
+    position: relative;
   }
 
   &__rate {
@@ -58,8 +59,33 @@
   &__cell-left {
     display: none;
   }
+
   &__none {
     display: none;
+  }
+
+  &__hit {
+    background-image: url(../../img/hit.png);
+    background-size: contain;
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__hit-text {
+    transform: rotate(-45deg);
+    margin: 0;
+    position: absolute;
+    top:15px;
+    left:15px;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
   }
 }
 
@@ -99,6 +125,7 @@
       background-color: $color-white;
       align-items: center;
     }
+
     &__text-left {
       font-family: 'Open Sans';
       font-style: normal;
@@ -107,6 +134,7 @@
       margin: 0;
       color: $color-dark-blue;
     }
+
     &__text {
       display: none;
     }
@@ -134,6 +162,83 @@
     &__none {
       display: revert;
       height: 75px;
+    }
+
+    &__hit {
+      background-image: url(../../img/hit.png);
+      background-size: contain;
+      width: 61px;
+      height: 61px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__hit-text {
+      transform: rotate(-45deg);
+      margin: 0;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+}
+
+@media ($desktop) {
+  .table {
+    &__header {
+      height: 77px;
+      padding: 10px 0 10px;
+    }
+
+    &__rate {
+      font-size: 18px;
+      margin: 0 0 3px;
+    }
+
+    &__price {
+      font-size: 24px;
+    }
+
+    &__content {
+      width: 196px;
+      height: 56.2px;
+      padding: 0 17px 0 19px;
+    }
+
+    &__text-left {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    &__hit {
+      background-image: url(../../img/hit.png);
+      background-size: contain;
+      width: 74px;
+      height: 74px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__hit-text {
+      transform: rotate(-45deg);
+      margin: 0;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: center;
     }
   }
 }

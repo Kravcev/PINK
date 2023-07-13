@@ -12,6 +12,10 @@
     flex-direction: row;
   }
 
+  &__label {
+    display: revert;
+  }
+
   &__label--static:hover {
     background-color: $color-dark-blue;
     opacity: 0.6;
@@ -51,7 +55,7 @@
   }
 
   &__closed--mobile {
-    fill:  $color-white;
+    fill: $color-white;
   }
 
   &__closed--mobile:hover {
@@ -64,6 +68,10 @@
     &--table {
       display: none;
     }
+
+    &__label {
+      display: revert;
+    }
   }
 }
 
@@ -72,5 +80,38 @@
     &--table {
       display: none;
     }
+
+    &__desctop--prev {
+      position: absolute;
+      background-image: url(../../img/label-prev.svg);
+      background-color: $transparent-glass;
+      border: none;
+      background-repeat: no-repeat;
+      width: 21px;
+      height: 41px;
+      top: 213px;
+      left: 130px;
+      display: revert;
+    }
+
+
+    &__desctop--next {
+      position: absolute;
+      background-image: url(../../img/label-next.svg);
+      background-color: $transparent-glass;
+      border: none;
+      background-repeat: no-repeat;
+      width: 21px;
+      height: 41px;
+      top: 213px;
+      right: 130px;
+      display: revert;
+    }
+
+
+    &__label {
+      display: none;
+    }
   }
+
 }

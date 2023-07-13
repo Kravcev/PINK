@@ -16,7 +16,7 @@
     position: absolute;
     right: 0;
     left: 0;
-    z-index: 99;
+    z-index: 20;
   }
 
   &__control--static {
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 20px 4px 20px;
+    padding: 22px 20px 4px 20px;
     position: relative;
   }
 
@@ -43,22 +43,27 @@
     text-decoration: none;
     padding: 0;
     background-color: $color-dark-blue;
-
   }
 
   &__item {
     border-bottom: 1px solid $color-black;
     border-top: 1px solid $color-smoke;
     list-style-type: none;
-
+    height: 61px;
+    display: block;
+    text-align: center;
   }
 
   &__link {
     text-decoration: none;
-    text-align: center;
-    height: 64px;
     background-color: $color-dark-blue;
     color: $color-white;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: left;
   }
 
   &__link:hover {
@@ -79,6 +84,11 @@
     font-size: 24px;
     line-height: 120%;
     text-align: center;
+  }
+
+  &__slogan--form {
+    height: 192px;
+    line-height: 135%;
   }
 
   &__phone-hand {

@@ -1,6 +1,10 @@
 .slider {
 
   // блок слайлов с отзовами пользователей
+  &__img {
+    display: none;
+  }
+
   &__reviews {
     padding: 26px 20px;
     position: relative;
@@ -25,6 +29,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
+    color: $color-dark-blue;
   }
 
   // лист таблицы
@@ -47,8 +52,13 @@
   }
 }
 
+
 @media ($tablet) {
   .slider {
+    &__img {
+      display: none;
+    }
+
     &__reviews {
       display: flex;
       flex-direction: column;
@@ -90,9 +100,57 @@
       background-size: 100vw 391px;
       padding: 0 0 34px;
     }
+
     &__table {
       padding-top: 108px;
       padding-bottom: 34px;
+      margin: auto;
+    }
+  }
+}
+
+@media ($desktop) {
+  .slider {
+    &__img {
+      display: revert;
+      fill: $color-gray;
+      width: 79px;
+      height: 63px;
+      margin: 0 auto 50px;
+    }
+
+    &__reviews {
+      height: 325px;
+      padding: 72px 210px 16px;
+    }
+
+    &__author {
+      font-size: 24px;
+      margin-bottom: 2px;
+    }
+
+    &__text {
+      font-size: 18px;
+      font-family: 'Open Sans';
+      font-weight: 400;
+      line-height: 30px;
+      color: $color-dark-blue;
+    }
+
+    &__about {
+      font-size: 18px;
+      display: revert;
+    }
+
+    &__page-table {
+      background-image: url(../../img/grey-background-min-tablet.png);
+      background-size: 100vw 522px;
+      padding: 0 0 34px;
+    }
+
+    &__table {
+      padding-top: 147px;
+      padding-bottom: 63px;
       margin: auto;
     }
   }
