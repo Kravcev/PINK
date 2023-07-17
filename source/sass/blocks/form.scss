@@ -1,0 +1,141 @@
+.header {
+  position: relative;
+
+  &__main-form {
+    background-color: $color-dark-blue;
+    background-image: url(../../img/back-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    height: 237px;
+  }
+
+  &__slogan-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0 auto;
+    padding: 0 20px 29px;
+    height: 192px;
+    color: $color-white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 135%;
+    text-align: center;
+  }
+}
+
+.form {
+
+  &__title-box {
+    padding: 35px 18px 16px;
+  }
+
+  &__page-title {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  // Персональные данные
+
+  &__personal {
+    border: none;
+    padding: 9px 18px 28px;
+    height: 342px;
+    margin-right: 26px;
+  }
+
+  &__personal-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__personal-item {
+    height: 115px;
+  }
+
+  &__personal-text {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: $color-pink;
+    margin-left: 22px;
+  }
+
+  &__personal-input {
+    height: 59px;
+    width: 100%;
+    padding: 0;
+    border: 2px solid $color-gray-low;
+    margin-top: 5px;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 20px;
+  }
+
+  &__data {
+    border: none;
+  }
+
+  &__applications {
+    border: none;
+    background-color: $color-gray;
+  }
+
+  // ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ
+
+  &__achievements {
+    height: 471px;
+    background-color: $color-gray;
+    border: none;
+    padding: 123px 15px 10px;
+    position: relative;
+  }
+
+  &__achievements-title {
+    position: absolute;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: $color-pink;
+    width: 230px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 39px;
+  }
+
+  &__achievements-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__achievements-item {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__achievements-text {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $color-dark-blue;
+    margin-left: 22px;
+  }
+}
