@@ -86,10 +86,7 @@
     text-align: center;
   }
 
-  &__slogan--form {
-    height: 192px;
-    line-height: 135%;
-  }
+
 
   &__phone-hand {
     position: absolute;
@@ -112,6 +109,7 @@
     gap: 12px;
   }
 }
+
 
 @media ($tablet) {
   .header {

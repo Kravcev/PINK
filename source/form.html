@@ -19,7 +19,7 @@
 
 <body class="page">
   <header class="page__header header">
-    <div class="header__main">
+    <div class="header__main-form">
       <div class="header__menu">
         <h1 class="visually-hidden">Приложение "PINK" помогает взглянуть на жизнь иначе</h1>
         <div class="header__control header__control--static">
@@ -81,7 +81,7 @@
             <span></span>
           </div>
         </div>
-        <nav class="header__nav">
+        <nav class="header__nav visually-hidden">
           <ul class="header__nav-menu">
             <li class="header__item">
               <a href="index.html" class="header__link">Главная</a>
@@ -98,10 +98,106 @@
           </ul>
         </nav>
       </div>
-      <p class="header__slogan header__slogan--form">Конкурс на самое
+      <p class="header__slogan-form">Конкурс на самое
         безбашенное
         путешествие с Пинк</p>
     </div>
+  </header>
+  <main class="form__page">
+    <form action="#" method="post" target="_blank">
+      <div class="form__title-box">
+        <h1 class="form__page-title">Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!</h1>
+      </div>
+      <fieldset class="form__personal">
+        <legend class="visually-hidden">Персональные данные</legend>
+        <ul class="form__personal-list">
+          <li class="form__personal-item">
+            <label class="form__personal-text" for="name">ФАМИЛИЯ:</label>
+            <input class="form__personal-input" type="text" name="name" placeholder="Укажите фамилию *" id="name" required>
+          </li>
+          <li class="form__personal-item">
+            <label class="form__personal-text" for="name">ИМЯ:</label>
+            <input class="form__personal-input" type="text" name="name" placeholder="Введите ваше имя *" id="name" required>
+          </li>
+          <li class="form__personal-item">
+            <label class="form__personal-text" for="name">ОТЧЕСТВО:</label>
+            <input class="form__personal-input" type="text" name="name" placeholder="Ну и отчество тоже" id="name" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__achievements">
+        <legend class="form__achievements-title">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
+        <ul class="form__achievements-list">
+          <li class="form__achievements-item">
+            <input type="checkbox" name="selfie-with-a-shark" id="selfie" checked>
+            <label class="form__achievements-text" for="selfie">Сделал селфи с акулой</label>
+          </li>
+          <li class="form__achievements-item">
+            <input type="checkbox" name="Burned-on-the-beach" id="Burned" checked>
+            <label class="form__achievements-text" for="Burned">Обгорел на пляже</label>
+          </li>
+          <li class="form__achievements-item">
+            <input type="checkbox" name="Have-you-seen-Chuck-Norris" id="Chuck">
+            <label class="form__achievements-text" for="Chuck">Видел Чака Норриса</label>
+          </li>
+          <li class="form__achievements-item">
+            <input type="checkbox" name="Bought-souvenirs" id="souvenirs">
+            <label class="form__achievements-text" for="souvenirs">Накупил сувениров</label>
+          </li>
+          <li class="form__achievements-item">
+            <input type="checkbox" name="Held-the-tower" id="tower" checked>
+            <label class="form__achievements-text" for="tower">Удержал башню</label>
+          </li>
+          <li class="form__achievements-item">
+            <input type="checkbox" name="Trashed-the-hotel" id="hotel">
+            <label class="form__achievements-text" for="hotel">Разгромил отель</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__data">
+        <legend class="visually-hidden">Контакты</legend>
+        <ul>
+          <li>
+            <label class="form__data-text" for="number">НОМЕР ТЕЛЕФОНА</label>
+            <input type="tel" name="phone" placeholder="Номер, пожалуйста" id="number" maxlength="21" required>
+          </li>
+          <li>
+            <label class="form__data-text" for="email">АДРЕС ПОЧТЫ</label>
+            <input type="email" name="mail" placeholder="Введите почту *" id="email" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__applications">
+        <legend class="form__applications-title">С каким приложением
+          путешествовали?</legend>
+        <ul>
+          <li>
+            <p></p>
+            <input type="radio" name="preference" id="iOS" value="iOS" checked>
+            <label class="form__applications-text" for="iOS">Pink для iOS</label>
+          </li>
+          <li>
+            <input type="radio" name="preference" id="Android" value="Android">
+            <label class="form__applications-text" for="Android">Pink на Android</label>
+          </li>
+          <li>
+            <input type="radio" name="preference" id="Windows" value="Windows">
+            <label class="form__applications-text" for="Windows">Windows Phone</label>
+          </li>
+        </ul>
+      </fieldset>
+      <div>
+        <label class="form__message-title" for="message">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+        <textarea name="comment" rows="11" cols="25" placeholder="Можно прям в красках, не
+стесняясь в выражениях" id="message"></textarea>
+      </div>
+      <div>
+        <button class="form__button button" type="submit">Отправить форму</button>
+        <p class="form__necessarily">* — Обязательные поля</p>
+      </div>
+    </form>
   </main>
   <footer class="page__footer footer">
     <div class="footer__section">
