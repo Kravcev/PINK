@@ -158,31 +158,29 @@
       </fieldset>
       <fieldset class="form__data">
         <legend class="visually-hidden">Контакты</legend>
-        <ul>
-          <li>
+        <ul class="form__data-list">
+          <li class="form__data-item">
             <label class="form__data-text" for="number">НОМЕР ТЕЛЕФОНА</label>
-            <input type="tel" name="phone" placeholder="Номер, пожалуйста" id="number" maxlength="21" required>
+            <input class="form__data-input" type="tel" name="phone" placeholder="Номер, пожалуйста" id="number" maxlength="21" required>
           </li>
-          <li>
+          <li class="form__data-item">
             <label class="form__data-text" for="email">АДРЕС ПОЧТЫ</label>
-            <input type="email" name="mail" placeholder="Введите почту *" id="email" required>
+            <input class="form__data-input" type="email" name="mail" placeholder="Введите почту *" id="email" required>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__applications">
-        <legend class="form__applications-title">С каким приложением
-          путешествовали?</legend>
-        <ul>
-          <li>
-            <p></p>
+        <legend class="form__applications-title">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</legend>
+        <ul class="form__applications-list">
+          <li class="form__applications-item">
             <input type="radio" name="preference" id="iOS" value="iOS" checked>
             <label class="form__applications-text" for="iOS">Pink для iOS</label>
           </li>
-          <li>
+          <li class="form__applications-item">
             <input type="radio" name="preference" id="Android" value="Android">
             <label class="form__applications-text" for="Android">Pink на Android</label>
           </li>
-          <li>
+          <li class="form__applications-item">
             <input type="radio" name="preference" id="Windows" value="Windows">
             <label class="form__applications-text" for="Windows">Windows Phone</label>
           </li>

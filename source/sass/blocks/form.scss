@@ -47,7 +47,6 @@
   &__personal {
     border: none;
     padding: 9px 18px 28px;
-    height: 342px;
     margin-right: 26px;
   }
 
@@ -84,19 +83,9 @@
     padding-left: 20px;
   }
 
-  &__data {
-    border: none;
-  }
-
-  &__applications {
-    border: none;
-    background-color: $color-gray;
-  }
-
   // ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ
 
   &__achievements {
-    height: 471px;
     background-color: $color-gray;
     border: none;
     padding: 123px 15px 10px;
@@ -137,5 +126,103 @@
     line-height: 30px;
     color: $color-dark-blue;
     margin-left: 22px;
+  }
+
+  // Контакты
+
+  &__data {
+    border: none;
+    padding: 32px 18px 28px;
+    margin-right: 26px;
+  }
+
+  &__data-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__data-title {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: $color-pink;
+    width: 230px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 39px;
+  }
+
+  &__data-input {
+    height: 59px;
+    width: 100%;
+    padding: 0;
+    border: 2px solid $color-gray-low;
+    margin-top: 5px;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 20px;
+  }
+
+  &__data-item {
+    height: 115px;
+  }
+
+  &__data-text {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: $color-pink;
+    margin-left: 24px;
+  }
+
+  // С каким приложением путешествовали?
+
+  &__applications {
+    border: none;
+    background-color: $color-gray;
+    position: relative;
+    padding: 112px 30px 45px;
+  }
+
+  &__applications-title {
+    position: absolute;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: $color-pink;
+    width: 230px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 36px;
+  }
+
+  &__applications-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__applications-item {
+    height: 75px;
+  }
+
+  &__applications-text {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $color-dark-blue;
+    margin-left: 31px;
   }
 }
