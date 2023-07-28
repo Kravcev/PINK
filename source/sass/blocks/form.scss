@@ -31,7 +31,7 @@
 .form {
 
   &__title-box {
-    padding: 35px 18px 16px;
+    padding: 30px 18px 11px;
   }
 
   &__page-title {
@@ -42,11 +42,15 @@
     text-align: center;
   }
 
+  &__page-title--additional {
+    display: none;
+  }
+
   // Персональные данные
 
   &__personal {
     border: none;
-    padding: 9px 18px 28px;
+    padding: 9px 18px 26px;
     margin-right: 26px;
   }
 
@@ -83,12 +87,16 @@
     padding-left: 20px;
   }
 
+  &__personal-input::placeholder {
+    color: $color-dark-blue;
+  }
+
   // ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ
 
   &__achievements {
-    background-color: $color-gray;
+    background-color: rgb(242, 242, 242);
     border: none;
-    padding: 123px 15px 10px;
+    padding: 113px 15px 0px;
     position: relative;
   }
 
@@ -116,7 +124,7 @@
   &__achievements-item {
     padding: 0;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
   }
 
   &__achievements-text {
@@ -125,14 +133,46 @@
     font-weight: 400;
     line-height: 30px;
     color: $color-dark-blue;
-    margin-left: 22px;
+    margin-left: 3px;
+  }
+
+
+  &__custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  &__custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid $color-gray-low;
+    border-radius: 3px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 62% 59%;
+  }
+
+  &__custom-checkbox:checked+label::before {
+    background-image: url(../../img/tick.svg)
   }
 
   // Контакты
 
   &__data {
     border: none;
-    padding: 32px 18px 28px;
+    padding: 31px 18px 25px;
     margin-right: 26px;
   }
 
@@ -154,6 +194,7 @@
     right: 0;
     margin: auto;
     top: 39px;
+    display: none;
   }
 
   &__data-input {
@@ -189,7 +230,7 @@
     border: none;
     background-color: $color-gray;
     position: relative;
-    padding: 112px 30px 0px;
+    padding: 121px 0px 0px;
   }
 
   &__applications-title {
@@ -204,7 +245,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    top: 36px;
+    top: 39px;
   }
 
   &__applications-list {
@@ -217,13 +258,50 @@
     height: 75px;
   }
 
+  &__applications-item:last-child {
+    height: 69px;
+  }
+
   &__applications-text {
     font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     color: $color-dark-blue;
-    margin-left: 31px;
+    margin-left: 21px;
+  }
+
+  &__applications-item input[type=radio] {
+    display: none;
+  }
+
+  &__applications-item label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 67px;
+    margin-right: 0;
+    line-height: 18px;
+    user-select: none;
+
+  }
+
+  &__applications-item label:before {
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background: url(../../img/Ellipse-passive.svg) 0 0 no-repeat;
+    top: -12px;
+    left: -3px;
+  }
+
+  /* Checked */
+  &__applications-item input[type=radio]:checked+label:before {
+    background: url(../../img/Ellipse-active.svg) 0 0 no-repeat;
   }
 
   // ОПИШИТЕ СВОИ ЭМОЦИИ
@@ -251,14 +329,15 @@
     line-height: 30px;
     color: $color-dark-blue;
     border: 2px solid $color-gray-low;
-    padding: 13px 20px 4px;
-    margin-bottom: 10px;
+    padding: 14px 22px 4px;
+    margin-bottom: 9px;
+    min-height: 181px;
   }
 
   // Отправить форму
 
   &__button-box {
-    padding: 30px 20px 10px;
+    padding: 29px 20px 10px;
 
   }
 
@@ -290,5 +369,236 @@
 
   &__necessarily-element {
     color: $color-pink;
+  }
+
+  &__data-icon-phone {
+    display: none;
+  }
+
+  &__data-icon-mile {
+    display: none;
+  }
+}
+
+
+@media ($tablet) {
+
+  .header {
+    &__main-form {
+      min-height: 440px;
+    }
+
+    &__slogan-form {
+      padding: 190px 80px 57px;
+      font-size: 50px;
+      line-height: 68px;
+    }
+  }
+
+  .form {
+
+    &__page-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title-box {
+      padding: 35px 18px 29px;
+    }
+
+    &__page-title {
+      font-size: 18px;
+      text-align: center;
+      margin: 0;
+      padding: 56px 42px 0px;
+    }
+
+    &__page-title--additional {
+      font-family: 'Open Sans';
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+      margin: 0;
+      display: revert;
+    }
+
+    // Персональные данные
+
+    &__personal {
+      padding: 17px 20px 40px;
+      margin: 0;
+      order: 1;
+    }
+
+    &__personal-item {
+      display: flex;
+      align-items: center;
+    }
+
+    &__personal-text {
+      margin: 0;
+      margin-right: 17px;
+    }
+
+    &__personal-input {
+      margin: 0;
+    }
+
+    &__applications {
+      order: 2;
+      border: 2px solid $color-gray-low;
+      background-color: $color-white;
+      margin: 0px 20px 66px;
+      padding: 64px 40px 12px;
+    }
+
+    &__applications-item label {
+      padding-left: 58px;
+    }
+
+    &__applications-title {
+      width: 364px;
+      background-color: $color-white;
+      top: -10px;
+    }
+
+    &__data {
+      order: 3;
+      border: revert;
+      border: 2px solid $color-gray-low;
+      margin: 0 20px 66px;
+      padding: 44px 82px 0px 58px;
+      position: relative;
+    }
+
+    &__data-title {
+      display: revert;
+      width: 256px;
+      position: absolute;
+      margin-left: 10px;
+      background-color: $color-white;
+      text-align: center;
+      top: -9px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    &__data-item {
+      display: flex;
+      flex-direction: column;
+      height: 131px;
+    }
+
+    &__data-text {
+      order: 2;
+      line-height: 0px;
+      margin-left: 19px;
+    }
+
+    &__data-input {
+      order: 1;
+      margin-top: 1px;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    &__data-icon-phone {
+      display: revert;
+      position: absolute;
+      right: 59px;
+      top: 47px;
+    }
+
+    &__data-icon-mile {
+      display: revert;
+      position: absolute;
+      right: 59px;
+      top: 178px;
+    }
+
+    &__achievements {
+      order: 4;
+      border: revert;
+      border: 2px solid $color-gray-low;
+      margin: 0 20px 66px;
+      padding: 52px 55px 5px;
+      position: relative;
+      background-color: $color-white;
+    }
+
+    &__achievements-item {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 38px;
+    }
+
+    &__achievements-title {
+      display: revert;
+      width: 433px;
+      position: absolute;
+      margin-left: 10px;
+      background-color: $color-white;
+      text-align: center;
+      top: -9px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    &__message {
+      position: relative;
+      order: 5;
+      margin: 0px 20px 36px;
+      border: 2px solid $color-gray-low;
+
+    }
+
+    &__message-title {
+      display: revert;
+      width: 260px;
+      position: absolute;
+      margin-left: 10px;
+      background-color: $color-white;
+      text-align: center;
+      top: -9px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    &__message-text {
+      padding: 13px 20px 26px;
+      margin: 7px 37px 43px 39px;
+      min-height: 150px;
+    }
+
+    &__button-box {
+      display: flex;
+      order: 6;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    &__button {
+      margin: 0;
+      width: 300px;
+      left: 0%;
+      transform: translate(0, 0);
+    }
+
+    &__necessarily {
+      margin: 0;
+    }
+  }
+
+  .footer {
+
+    &__section {
+      height: 55px;
+      padding: 73px 20px;
+    }
   }
 }
