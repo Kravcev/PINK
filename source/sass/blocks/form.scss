@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     display: flex;
     position: relative;
-    height: 237px;
+    min-height: 237px;
   }
 
   &__slogan-form {
@@ -34,7 +34,7 @@
     padding: 30px 18px 11px;
   }
 
-  &__page-title {
+  &__title-text {
     font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 400;
@@ -42,7 +42,7 @@
     text-align: center;
   }
 
-  &__page-title--additional {
+  &__title-text--temporary {
     display: none;
   }
 
@@ -382,9 +382,9 @@
 
 
 @media ($tablet) {
-
   .header {
     &__main-form {
+      background-image: url(../../img/back-tablet.png);
       min-height: 440px;
     }
 
@@ -406,14 +406,14 @@
       padding: 35px 18px 29px;
     }
 
-    &__page-title {
+    &__title-text {
       font-size: 18px;
       text-align: center;
       margin: 0;
       padding: 56px 42px 0px;
     }
 
-    &__page-title--additional {
+    &__title-text--temporary {
       font-family: 'Open Sans';
       font-size: 18px;
       font-weight: 400;
@@ -600,5 +600,128 @@
       height: 55px;
       padding: 73px 20px;
     }
+  }
+}
+
+@media ($desktop) {
+  .header {
+    &__main-form {
+      // вопрос к фоновому изображению, похоже не та версия
+      background-image: url(../../img/form-back-desktop.png);
+      min-height: 394px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: 10px;
+      display: flex;
+      position: relative;
+    }
+
+    &__slogan-form {
+      padding: 112px 70px 57px;
+    }
+
+  }
+
+  .form {
+    &__page-list {
+      display: grid;
+      grid-template-columns: 131px 1fr 70px 1fr 129px;
+      grid-template-rows: 230px 366px 228px 230px 282px 130px;
+    }
+
+    &__title-box {
+      grid-row: 1 / 2;
+      grid-column: 2 / 5;
+    }
+
+    &__title-text {
+      padding: 56px 70px 0px;
+      grid-row: 4 / 5;
+      grid-column: 2 / 5;
+    }
+
+    &__page-br {
+      display: none;
+    }
+
+    &__personal {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__personal-item {
+      display: flex;
+      align-items: baseline;
+      padding-top: 6px;
+      height: 110px;
+    }
+
+    &__applications {
+      grid-row: 2 / 3;
+      grid-column: 4 / 5;
+      margin: 0;
+      margin-bottom: 65px;
+      padding: 65px 54px 12px;
+    }
+
+    &__data {
+      grid-row: 3 / 4;
+      grid-column: 2 / 5;
+      margin: 0;
+      margin-bottom: 66px;
+      padding: 41px 82px 0px 58px;
+    }
+
+    &__data-list {
+      display: flex;
+      justify-content: center;
+      gap: 92px;
+
+    }
+
+    &__data-item {
+      position: relative;
+      width: 100%;
+    }
+
+    &__data-icon-phone {
+      position: absolute;
+      right: -23px;
+      top: 3px;
+    }
+
+    &__data-icon-mile {
+      position: absolute;
+      right: -23px;
+      top: 3px;
+    }
+
+    &__achievements {
+      grid-row: 4 / 5;
+      grid-column: 2 / 5;
+      margin: 0 0px 17px;
+      padding: 34px 39px 5px;
+
+    }
+
+    &__achievements-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__message {
+      grid-row: 5 / 6;
+      grid-column: 2 / 5;
+    }
+
+    &__button-box {
+      grid-row: 6 / 7;
+      grid-column: 2 / 5;
+    }
+
   }
 }

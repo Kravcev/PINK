@@ -58,7 +58,7 @@
     text-decoration: none;
     background-color: $color-dark-blue;
     color: $color-white;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 700;
     line-height: 57px;
@@ -85,8 +85,6 @@
     line-height: 120%;
     text-align: center;
   }
-
-
 
   &__phone-hand {
     position: absolute;
@@ -167,6 +165,7 @@
   .header {
     &__main {
       background-image: url(../../img/back-desktop.png);
+
       height: 853px;
       grid-template-columns: 6.5em 299px 340px;
       grid-template-rows: 210px 126px 280px 119px;
@@ -196,6 +195,11 @@
 
     &__item {
       border: none;
+    }
+
+    &__item--active {
+      border-bottom: 2px solid $color-white;
+      height: 28px;
     }
 
     &__link {
