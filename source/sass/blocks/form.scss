@@ -371,6 +371,10 @@
     color: $color-pink;
   }
 
+  &__necessarily-text--temporary {
+    display: none;
+  }
+
   &__data-icon-phone {
     display: none;
   }
@@ -592,6 +596,10 @@
     &__necessarily {
       margin: 0;
     }
+
+    &__necessarily-text--temporary {
+      display: none;
+    }
   }
 
   .footer {
@@ -688,7 +696,7 @@
 
     &__data-icon-phone {
       position: absolute;
-      right: -23px;
+      right: -22px;
       top: 3px;
     }
 
@@ -701,27 +709,50 @@
     &__achievements {
       grid-row: 4 / 5;
       grid-column: 2 / 5;
-      margin: 0 0px 17px;
-      padding: 34px 39px 5px;
+      margin: 0 0px -2px;
+      padding: 51px 6px 13px 55px;
 
     }
 
     &__achievements-list {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
+      flex-flow: column wrap;
+      height: 100%;
       justify-content: space-between;
     }
 
     &__message {
       grid-row: 5 / 6;
       grid-column: 2 / 5;
+      margin: 66px 0px -1px;
+    }
+
+    &__message-text {
+      padding: 13px 20px 26px;
+      margin: 4px 37px 43px 39px;
+      min-height: 85px;
     }
 
     &__button-box {
       grid-row: 6 / 7;
       grid-column: 2 / 5;
+      padding: 75px 0px 10px;
     }
 
+    &__button {
+      height: 63px;
+    }
+
+    &__necessarily-text--temporary {
+      display: revert;
+    }
+  }
+
+  .footer {
+    &__section {
+      height: 55px;
+      padding: 68px 19px;
+    }
   }
 }
