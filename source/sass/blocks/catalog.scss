@@ -1,0 +1,36 @@
+.catalog {
+
+  &__title-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0 auto;
+    padding: 0 20px 29px;
+    height: 161px;
+    color: $color-white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  &__title-box {
+    display: flex;
+    min-height: 187px;
+    margin: 0;
+    margin-top: -3px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: $color-dark-blue;
+    background-color: $color-white;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}

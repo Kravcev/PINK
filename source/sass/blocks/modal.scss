@@ -30,6 +30,7 @@
   &--success {
     padding-top: 21px;
     top: 1657px;
+    border-radius: 5px;
   }
 
   &__lead--success {
@@ -59,6 +60,7 @@
     height: 199px;
     padding: 39px 23px 51px;
     top: 1166px;
+    border-radius: 5px;
   }
 
   &__lead--error {
@@ -107,7 +109,7 @@
     left: 0;
     right: 0;
     left: 25%;
-
+    border-radius: 5px;
     &__lead {
       max-width: 250px;
       font-size: 30px;
@@ -125,6 +127,7 @@
     &--success {
       padding-top: 50px;
       top: 1657px;
+      border-radius: 5px;
     }
 
     &__descr--success {
@@ -135,6 +138,7 @@
       height: 284px;
       padding: 50px 102px 37px;
       top: 1166px;
+      border-radius: 5px;
     }
   }
 }
@@ -146,10 +150,12 @@
     right: 0;
     left: 25%;
 
+
     &--error {
       height: 284px;
       padding: 50px 0px 21px;
       top: 1166px;
+      border-radius: 5px;
     }
 
     &__descr--error {

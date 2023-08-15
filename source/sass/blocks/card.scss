@@ -1,0 +1,125 @@
+.card {
+  position: relative;
+
+  &__img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    &--header {
+      background-image: url(../../img/panorama-tablet.png);
+      margin: 0;
+      height: 137px;
+    }
+
+    &--photo-1 {
+      background-image: url(../../img/photo-1-mobile.png);
+      margin: 0 20px;
+      height: 180px;
+    }
+
+    &--photo-2 {
+      background-image: url(../../img/photo-2-mobile.png);
+      margin: 0 20px;
+      height: 180px;
+    }
+
+    &--photo-3 {
+      background-image: url(../../img/photo-3-mobile.png);
+      margin: 0 20px;
+      height: 180px;
+    }
+
+    &--photo-4 {
+      background-image: url(../../img/photo-4-mobile.png);
+      margin: 0 20px;
+      height: 180px;
+    }
+
+    &--photo-5 {
+      background-image: url(../../img/photo-5-mobile.png);
+      margin: 0 20px;
+      height: 180px;
+    }
+
+    &--photo-6 {
+      background-image: url(../../img/photo-6-mobile.png);
+      margin: 0 20px;
+      height: 180px;
+    }
+  }
+
+  &__hit {
+    position: absolute;
+    background-color: $color-pink;
+    padding: 6px 20px;
+    color: $color-white;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    top: 0px;
+    right: 20px;
+  }
+
+  &__content-box {
+    background-color: $color-gray;
+    padding: 19px 5px 19px 18px;
+    margin: 0 20px 20px;
+  }
+
+  &__autor {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: $color-dark-blue;
+  }
+
+  &__text-light {
+    color: $color-dark-blue;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+    color: $color-dark-blue;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 9px;
+  }
+
+  &__statistical {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  &__statistical-icon {
+    fill: $color-pink;
+  }
+
+  &__statistical-text {
+    margin: 0;
+    color: $color-pink;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
