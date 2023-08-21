@@ -8,7 +8,7 @@
 
 
     &--header {
-      background-image: url(../../img/panorama-tablet.png);
+      background-image: url(../../img/panorama-mobile.png);
       margin: 0;
       height: 137px;
     }
@@ -121,5 +121,89 @@
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
+  }
+}
+
+@media ($tablet) {
+  .card {
+    flex-basis: 48%;
+    &__img {
+      &--header {
+        background-image: url(../../img/panorama-tablet.png);
+        margin: 0;
+        height: 509px;
+      }
+
+      &--photo-1 {
+        background-image: url(../../img/photo-1-tablet.png);
+        margin: 0;
+        height: 300px;
+      }
+
+      &--photo-2 {
+        background-image: url(../../img/photo-2-tablet.png);
+        margin: 0;
+        height: 300px;
+      }
+
+      &--photo-3 {
+        background-image: url(../../img/photo-3-tablet.png);
+        margin: 0;
+        height: 300px;
+      }
+
+      &--photo-4 {
+        background-image: url(../../img/photo-4-tablet.png);
+        margin: 0;
+        height: 300px;
+      }
+
+      &--photo-5 {
+        background-image: url(../../img/photo-5-tablet.png);
+        margin: 0;
+        height: 300px;
+      }
+
+      &--photo-6 {
+        background-image: url(../../img/photo-6-tablet.png);
+        margin: 0;
+        height: 300px;
+      }
+    }
+
+    &__hit {
+      top: 57px;
+    }
+
+    &__statistical {
+      flex-direction: row-reverse;
+      position: absolute;
+      justify-content: end;
+      gap: 15px;
+
+      &--header {
+        right: 30px;
+        bottom: 73px;
+      }
+    }
+
+    &__content-box {
+      position: relative;
+      padding: 23px 5px 16px 30px;
+      height: 155px;
+      margin: 0;
+    }
+
+    &__content-box--header {
+      height: 82px;
+      margin: 0 20px 50px;
+    }
+  }
+}
+
+@media ($desktop) {
+  .card {
+    flex-basis: 30%;
+    height: 100%;
   }
 }

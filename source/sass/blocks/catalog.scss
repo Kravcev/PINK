@@ -32,5 +32,52 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
+
+
+    &--footer {
+      min-height: 142px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text-br {
+    display: initial;
+  }
+}
+
+@media ($tablet) {
+  .catalog {
+    &__title-text {
+      text-align: center;
+      font-family: 'Open Sans';
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      height: 311px;
+      padding: 0 150px 29px;
+    }
+
+    &__title-box {
+      text-align: center;
+      font-family: 'Open Sans';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      padding: 27px 53px 14px;
+      margin: 0;
+    }
+
+    &__text-br {
+      display: none;
+    }
+
+    &__card-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
   }
 }
